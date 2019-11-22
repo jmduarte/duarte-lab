@@ -15,6 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110952733-2"></script>
 <script>
@@ -69,6 +70,31 @@
     </ol>
 
     <!-- Intro Content -->
+               <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/flow-Hbb.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>Interaction networks for the identification of boosted \(H\to b\overline{b}\) decays</h2>
+        <p>We develop an algorithm based on an
+               interaction network to identify high-momentum
+               Higgs bosons decaying to bottom quark-antiquark pairs and
+               distinguish them from ordinary jets originating from
+               the hadronization of quarks and gluons. Describing the jet shower as a
+               combination of particle-to-particle and
+               particle-to-vertex interactions, the model is trained
+               to learn a jet representation on which the
+               classification problem is optimized. The algorithm is
+               trained on simulated samples of accurate LHC
+               collisions, released by the CMS collaboration on the
+               CERN Open Data Portal. The interaction network achieves
+               a drastic improvement in the identification performance
+	with respect to state-of-the-art algorithms.</p>
+	<p>Paper: <a
+           href="https://arxiv.org/abs/1909.12285">arXiv:1909.12285</a>
+	<br>Code: <a href="https://github.com/eric-moreno/IN">https://github.com/eric-moreno/IN</a>
+      </div>
+    </div>
            <div class="row">
       <div class="col-lg-6">
         <img class="img-fluid rounded mb-4" src="images/graph_white.jpg" alt="">
@@ -80,17 +106,12 @@
            identify all-hadronic decays of high-momentum heavy
            particles produced at the LHC and distinguish them from
            ordinary jets originating from the hadronization of quarks
-           and gluons. The jet dynamics are described as a set of
+	and gluons. The jet dynamics are described as a set of
            one-to-one interactions between the jet constituents. Based
            on a representation learned from these interactions, the
-           jet is associated to one of the considered
-           categories. Unlike other architectures, the JEDI-net models
-           achieve their performance without special handling of the
-           sparse input jet representation, extensive pre-processing,
-           particle ordering, or specific assumptions regarding the
-           underlying detector geometry. The presented models give
-           better results with less model parameters, offering
-	interesting prospects for LHC applications.</p>
+           jet is associated to one of the considered categories. The
+           presented models give better results with less model
+           parameters than other traditional architectures.</p>
 	<p>Paper: <a
            href="https://arxiv.org/abs/1908.05318">arXiv:1908.05318</a>
 	<br>Code: <a href="https://github.com/jmduarte/JEDInet-code">https://github.com/jmduarte/JEDInet-code</a>
@@ -102,25 +123,17 @@
       </div>
       <div class="col-lg-6">
         <h2>FPGA-accelerated machine learning inference as a service for particle physics computing</h2>
-        <p>We
-        demonstrate that the acceleration of machine learning
+        <p>We demonstrate that the acceleration of machine learning
         inference as a service represents a nondisruptive, heterogeneous
         computing solution for particle physics experiments. We retrain the ResNet-50
-        convolutional neural network to demonstrate state-of-the-art
+        convolutional neural network to achieve state-of-the-art
         performance for top quark jet tagging at the LHC and apply a
         ResNet-50 model with transfer learning for neutrino event
         classification. Using Project Brainwave by Microsoft to
         accelerate the ResNet-50 image classification model, we
         achieve average inference times of 60 (10) milliseconds with
         our experimental physics software framework using Brainwave as
-        a cloud (edge or on-premises) service, representing an
-        improvement by a factor of approximately 30 (175) in model
-        inference latency over traditional CPU inference in current
-        experimental hardware. A single FPGA service accessed by many
-        CPUs achieves a throughput of 600-700 inferences per second
-        using an image batch of one, comparable to large batch-size
-        GPU throughput and significantly better than small batch-size
-        GPU throughput.</p>
+        a cloud (edge or on-premises) service, and a maximum throughput of 600-700 inferences per second.</p>
 	<p>Paper: <a href="https://doi.org/10.1007/s41781-019-0027-2">Comput Softw Big Sci (2019) 3: 13</a>
 	<br>Code: <a href="https://github.com/hls-fpga-machine-learning/SonicCMS">https://github.com/hls-fpga-machine-learning/SonicCMS</a>
       </div>
