@@ -1,4 +1,5 @@
 AuthType Basic  
-AuthName "restricted area"  
-AuthUserFile /home/jduarte/web/jduarte.physics.ucsd.edu/phys2c/hwsol/.htpasswd
-require valid-user
+AuthGroupFile /dev/null
+AuthName "Secure Document"
+AuthUserFile /var/www/users/jduarte/phys2c/hwsol/.htpasswd
+require user phys2c
