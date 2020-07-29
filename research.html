@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
-    
+
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -76,29 +76,69 @@
     </ol>
 
     <!-- Intro Content -->
+        <div class="row">
+    <div class="col-lg-6">
+<img class="img-fluid rounded mb-4" src="images/GPUaaS.png" alt="" width="500">
+</div>
+<div class="col-lg-6">
+<h2>GPU coprocessors as a service for deep learning inference in high energy physics</h2>
+<p>We present a comprehensive exploration of the use of GPU-based hardware acceleration for deep learning inference within the data reconstruction workflow of high energy physics.
+  We present several realistic examples and discuss a strategy for the seamless integration of coprocessors so that the CERN LHC can maintain, if not exceed, its current performance throughout its running.
+</p>
+<p>Paper: <a href="https://arxiv.org/abs/2007.10359">arXiv:2007.10359</a>
+<br>Code: <a href="https://github.com/hls-fpga-machine-learning/SonicCMS">https://github.com/hls-fpga-machine-learning/SonicCMS</a>
+</div>
+</div>
     <div class="row">
 <div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/CMS-HIG-19-003_Figure_003-b.png" alt="">
+<img class="img-fluid rounded mb-4" src="images/CMS-HIG-19-003_Figure_003-b.png" alt="" width="500">
 </div>
 <div class="col-lg-6">
 <h2>Inclusive search for highly boosted Higgs bosons decaying to bottom quark-antiquark pairs in proton-proton collisions at \(\sqrt{s}=13\) TeV</h2>
-<p>A search for standard model Higgs bosons (\(\mathrm{H}\)) produced with transverse momentum (\(p_\mathrm{T}\)) greater than 450 GeV and decaying to bottom quark-antiquark pairs (\(\mathrm{b}\overline{\mathrm{b}}\)) is performed using proton-proton collision data collected by the CMS experiment at the LHC at \(\sqrt{s}= 13\) TeV.
-The data sample corresponds to an integrated luminosity of 137 fb\(^{-1}\).
-The search is inclusive in the Higgs boson production mode.
-Highly Lorentz-boosted Higgs bosons decaying to \(\mathrm{b}\overline{\mathrm{b}}\) are reconstructed as single large-radius jets, and are identified using jet substructure and a dedicated b tagging technique based on a deep neural network.
-The method is validated with \(\mathrm{Z}\to \mathrm{b}\overline{\mathrm{b}}\) decays.
-For a Higgs boson mass of 125 GeV, an excess of events above the background assuming no Higgs boson production is observed with a local significance of 2.5 standard deviations (\(\sigma\)), while the expectation is 0.7.
-The corresponding signal strength and local significance with respect to the standard model expectation are \( \mu_\mathrm{H} = 3.7 \pm 1.2 (\mathrm{stat}) ^{+0.6}_{-0.7} (\mathrm{syst}) ^{+0.8}_{−0.5} (\mathrm{theo})\) and \(1.9\,\sigma\).
-Additionally, an unfolded differential cross section as a function of Higgs boson \(p_\mathrm{T}\) for the gluon fusion production mode is presented, assuming the other production modes occur at the expected rates.
+<p>A search for standard model Higgs bosons (\(\mathrm{H}\)) produced with transverse momentum (\(p_\mathrm{T}\)) greater than 450 GeV and decaying to bottom quark-antiquark pairs (\(\mathrm{b}\overline{\mathrm{b}}\)) is performed using proton-proton collision data collected by the CMS experiment at the LHC at \(\sqrt{s}= 13\) TeV. The data sample corresponds to an integrated luminosity of 137 fb\(^{-1}\). The search is inclusive in the Higgs boson production mode. Highly Lorentz-boosted Higgs bosons decaying to \(\mathrm{b}\overline{\mathrm{b}}\) are reconstructed as single large-radius jets, and are identified using jet substructure and a dedicated b tagging technique based on a deep neural network.
+  For a Higgs boson mass of 125 GeV, an excess of events above the background assuming no Higgs boson production is observed with a local significance of 2.5 standard deviations (\(\sigma\)), while the expectation is 0.7.
+  The corresponding signal strength and local significance with respect to the standard model expectation are \( \mu_\mathrm{H} = 3.7 \pm 1.2 (\mathrm{stat}) ^{+0.6}_{-0.7} (\mathrm{syst}) ^{+0.8}_{−0.5} (\mathrm{theo})\) and \(1.9\,\sigma\).
+  Additionally, an unfolded differential cross section as a function of Higgs boson \(p_\mathrm{T}\) for the gluon fusion production mode is presented, assuming the other production modes occur at the expected rates.
 </p>
 <p>Paper: <a
 href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
 <br>Figures: <a href="http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-19-003/index.html">http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-19-003</a>
 </div>
 </div>
+
+<div class="row">
+<div class="col-lg-6">
+<img class="img-fluid rounded mb-4" src="images/binary_ternary_architecture.png" alt="" width="500">
+</div>
+<div class="col-lg-6">
+<h2>Compressing deep neural networks on FPGAs to binary and ternary precision with hls4ml</h2>
+<p>We present the implementation of binary and ternary neural networks in the hls4ml library, designed to automatically convert deep neural network models to digital circuits with FPGA firmware.
+  We investigate different strategies to reduce networks' resource consumption by reducing the numerical precision of the network parameters to binary or ternary.
+  We discuss the trade-off between model accuracy and resource consumption.
+  In addition, we show how to balance between latency and accuracy by retaining full precision on a selected subset of network components.
+  As examples, we consider two multiclass classification tasks: handwritten digit recognition with the MNIST data set and jet identification with simulated proton-proton collisions at the CERN Large Hadron Collider. The binary and ternary implementation has similar performance to the higher precision implementation while using drastically fewer FPGA resources.
+</p>
+<p>Paper: <a href="https://doi.org/10.1088/2632-2153/aba042">Mach. Learn.: Sci. Technol. (2020)</a>
+<br>Code: <a href="https://github.com/hls-fpga-machine-learning/hls4ml">https://github.com/hls-fpga-machine-learning/hls4ml</a>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<img class="img-fluid rounded mb-4" src="images/bdt_node.png" alt="" width="400">
+</div>
+<div class="col-lg-6">
+<h2>Fast inference of boosted decision trees in FPGAs for particle physics</h2>
+<p>We describe the implementation of boosted decision trees in the hls4ml library, which allows the translation of a trained model into FPGA firmware through an automated conversion process.
+  Thanks to its fully on-chip implementation, hls4ml performs inference of boosted decision tree models with extremely low latency.
+  With a typical latency less than 100 ns, this solution is suitable for FPGA-based real-time processing, such as in the Level-1 trigger system of a collider experiment.
+</p>
+<p>Paper: <a href="https://doi.org/10.1088/1748-0221/15/05/p05026">J. Instrum. 15, P05026 (2020)</a>
+<br>Code: <a href="https://github.com/hls-fpga-machine-learning/hls4ml">https://github.com/hls-fpga-machine-learning/hls4ml</a>
+</div>
+</div>
                <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="images/flow-Hbb.jpg" alt="">
+        <img class="img-fluid rounded mb-4" src="images/flow-Hbb.jpg" alt="" width="500">
       </div>
       <div class="col-lg-6">
         <h2>Interaction networks for the identification of boosted \(H\to b\overline{b}\) decays</h2>
@@ -117,13 +157,13 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
                a drastic improvement in the identification performance
 	with respect to state-of-the-art algorithms.</p>
 	<p>Paper: <a
-           href="https://arxiv.org/abs/1909.12285">arXiv:1909.12285</a>
+           href="https://doi.org/10.1103/PhysRevD.102.012010">Phys. Rev. D 102, 012010 (2020)</a>
 	<br>Code: <a href="https://github.com/eric-moreno/IN">https://github.com/eric-moreno/IN</a>
       </div>
     </div>
            <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="images/graph_white.jpg" alt="">
+        <img class="img-fluid rounded mb-4" src="images/graph_white.jpg" alt="" width="500">
       </div>
       <div class="col-lg-6">
         <h2>JEDI-net: a jet identification algorithm based on interaction networks</h2>
@@ -145,7 +185,7 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
     </div>
         <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="images/sonic.jpg" alt="">
+        <img class="img-fluid rounded mb-4" src="images/sonic.jpg" alt="" width="500">
       </div>
       <div class="col-lg-6">
         <h2>FPGA-accelerated machine learning inference as a service for particle physics computing</h2>
@@ -167,11 +207,11 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
     <!-- /.row -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="images/flow-hls4ml.jpg" alt="">
+        <img class="img-fluid rounded mb-4" src="images/flow-hls4ml.jpg" alt="" width="500">
       </div>
       <div class="col-lg-6">
         <h2>Fast inference of deep neural networks in FPGAs for particle physics</h2>
-        <p>We develop a package based on High-Level Synthesis (HLS) called hls4ml to build machine
+        <p>We develop a package based on high-level Synthesis (HLS) called hls4ml to build machine
     learning models in FPGAs for extremely low-latency applications
     (less than one microsecond). The use of HLS increases accessibility
     across a broad user community and allows for a drastic decrease in
