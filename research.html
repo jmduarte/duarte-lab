@@ -76,6 +76,21 @@
     </ol>
 
     <!-- Intro Content -->
+    <div class="row">
+<div class="col-lg-6">
+<img class="img-fluid rounded mb-4" src="images/garnet_event_display.png" alt="" width="500">
+</div>
+<div class="col-lg-6">
+<h2>Distance-weighted graph neural networks on FPGAs for real-time particle reconstruction in high energy physics</h2>
+<p>We use a graph neural network architecture developed for real-time particle reconstruction and identification in a next-generation calorimeter and simplify it to meet the computing constraints of Level-1 trigger systems, including weight quantization.
+  We show how it can be executed with a latency of less than 1\(\mu\)s on an FPGA.
+  Using the \(\texttt{hls4ml}\) library, we convert the compressed models into FPGA firmware.
+  Performance of the synthesized models is presented both in terms of inference accuracy and resource usage.
+</p>
+<p>Paper: <a href="https://arxiv.org/abs/2008.03601">arXiv:2008.03601</a>
+<br>Code: <a href="https://github.com/hls-fpga-machine-learning/hls4ml/pull/188">https://github.com/hls-fpga-machine-learning/hls4ml/pull/188</a>
+</div>
+</div>
         <div class="row">
     <div class="col-lg-6">
 <img class="img-fluid rounded mb-4" src="images/GPUaaS.png" alt="" width="500">
@@ -111,8 +126,8 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
 <img class="img-fluid rounded mb-4" src="images/binary_ternary_architecture.png" alt="" width="500">
 </div>
 <div class="col-lg-6">
-<h2>Compressing deep neural networks on FPGAs to binary and ternary precision with hls4ml</h2>
-<p>We present the implementation of binary and ternary neural networks in the hls4ml library, designed to automatically convert deep neural network models to digital circuits with FPGA firmware.
+<h2>Compressing deep neural networks on FPGAs to binary and ternary precision with \(\texttt{hls4ml}\)</h2>
+<p>We present the implementation of binary and ternary neural networks in the \(\texttt{hls4ml}\) library, designed to automatically convert deep neural network models to digital circuits with FPGA firmware.
   We investigate different strategies to reduce networks' resource consumption by reducing the numerical precision of the network parameters to binary or ternary.
   We discuss the trade-off between model accuracy and resource consumption.
   In addition, we show how to balance between latency and accuracy by retaining full precision on a selected subset of network components.
@@ -128,8 +143,8 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
 </div>
 <div class="col-lg-6">
 <h2>Fast inference of boosted decision trees in FPGAs for particle physics</h2>
-<p>We describe the implementation of boosted decision trees in the hls4ml library, which allows the translation of a trained model into FPGA firmware through an automated conversion process.
-  Thanks to its fully on-chip implementation, hls4ml performs inference of boosted decision tree models with extremely low latency.
+<p>We describe the implementation of boosted decision trees in the \(\texttt{hls4ml}\) library, which allows the translation of a trained model into FPGA firmware through an automated conversion process.
+  Thanks to its fully on-chip implementation, \(\texttt{hls4ml}\) performs inference of boosted decision tree models with extremely low latency.
   With a typical latency less than 100 ns, this solution is suitable for FPGA-based real-time processing, such as in the Level-1 trigger system of a collider experiment.
 </p>
 <p>Paper: <a href="https://doi.org/10.1088/1748-0221/15/05/p05026">J. Instrum. 15, P05026 (2020)</a>
@@ -211,7 +226,7 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
       </div>
       <div class="col-lg-6">
         <h2>Fast inference of deep neural networks in FPGAs for particle physics</h2>
-        <p>We develop a package based on high-level Synthesis (HLS) called hls4ml to build machine
+        <p>We develop a package based on high-level Synthesis (HLS) called \(\texttt{hls4ml}\) to build machine
     learning models in FPGAs for extremely low-latency applications
     (less than one microsecond). The use of HLS increases accessibility
     across a broad user community and allows for a drastic decrease in
