@@ -81,6 +81,20 @@
     <!-- Intro Content -->
     <div class="row">
 <div class="col-lg-6">
+<img class="img-fluid rounded mb-4" src="images/mpnn_hor.png" alt="" width="500">
+</div>
+<div class="col-lg-6">
+<h2>Graph generative adversarial networks for sparse data generation in high energy physics</h2>
+<p>We develop a graph generative adversarial network to generate sparse data sets like those produced at the CERN Large Hadron Collider (LHC).
+  We demonstrate this approach by training on and generating sparse representations of MNIST handwritten digit images and jets of particles in proton-proton collisions like those at the LHC.
+  We find the model successfully generates sparse MNIST digits and particle jet data. We quantify agreement between real and generated data with a graph-based Fréchet Inception distance, and the particle and jet feature-level 1-Wasserstein distance for the MNIST and jet datasets respectively.
+</p>
+<p>Paper: <a href="https://arxiv.org/abs/2012.00173">arXiv:2012.00173</a>
+<br>Code: <a href="https://github.com/rkansal47/graph-gan">https://github.com/rkansal47/graph-gan</a>
+</div>
+</div>
+    <div class="row">
+<div class="col-lg-6">
 <img class="img-fluid rounded mb-4" src="images/schematic.png" alt="" width="500">
 </div>
 <div class="col-lg-6">
@@ -109,7 +123,7 @@ For large convolutional networks, the throughput is found to be comparable to GP
 This work represents the first open-source FPGAs-as-a-service toolkit.
 </p>
 <p>Paper: <a href="https://arxiv.org/abs/2010.08556">arXiv:2010.08556</a>
-<br>Code: <a href="https://github.com/hls-fpga-machine-learning/FaaST">https://github.com/hls-fpga-machine-learning/FaaST</a>
+<br>Code: <a href="https://github.com/fastmachinelearning/FaaST">https://github.com/fastmachinelearning/FaaST</a>
 </div>
 </div>
     <div class="row">
@@ -124,7 +138,7 @@ This work represents the first open-source FPGAs-as-a-service toolkit.
   Performance of the synthesized models is presented both in terms of inference accuracy and resource usage.
 </p>
 <p>Paper: <a href="https://arxiv.org/abs/2008.03601">arXiv:2008.03601</a>
-<br>Code: <a href="https://github.com/hls-fpga-machine-learning/hls4ml/pull/213">https://github.com/hls-fpga-machine-learning/hls4ml/pull/213</a>
+<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml/pull/213">https://github.com/fastmachinelearning/hls4ml/pull/213</a>
 </div>
 </div>
         <div class="row">
@@ -137,7 +151,7 @@ This work represents the first open-source FPGAs-as-a-service toolkit.
   We present several realistic examples and discuss a strategy for the seamless integration of coprocessors so that the CERN LHC can maintain, if not exceed, its current performance throughout its running.
 </p>
 <p>Paper: <a href="https://arxiv.org/abs/2007.10359">arXiv:2007.10359</a>
-<br>Code: <a href="https://github.com/hls-fpga-machine-learning/SonicCMS">https://github.com/hls-fpga-machine-learning/SonicCMS</a>
+<br>Code: <a href="https://github.com/fastmachinelearning/SonicCMS">https://github.com/fastmachinelearning/SonicCMS</a>
 </div>
 </div>
     <div class="row">
@@ -170,7 +184,7 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
   As examples, we consider two multiclass classification tasks: handwritten digit recognition with the MNIST data set and jet identification with simulated proton-proton collisions at the CERN Large Hadron Collider. The binary and ternary implementation has similar performance to the higher precision implementation while using drastically fewer FPGA resources.
 </p>
 <p>Paper: <a href="https://doi.org/10.1088/2632-2153/aba042">Mach. Learn.: Sci. Technol. (2020)</a>
-<br>Code: <a href="https://github.com/hls-fpga-machine-learning/hls4ml">https://github.com/hls-fpga-machine-learning/hls4ml</a>
+<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
 </div>
 </div>
 <div class="row">
@@ -184,7 +198,7 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
   With a typical latency less than 100 ns, this solution is suitable for FPGA-based real-time processing, such as in the Level-1 trigger system of a collider experiment.
 </p>
 <p>Paper: <a href="https://doi.org/10.1088/1748-0221/15/05/p05026">J. Instrum. 15, P05026 (2020)</a>
-<br>Code: <a href="https://github.com/hls-fpga-machine-learning/hls4ml">https://github.com/hls-fpga-machine-learning/hls4ml</a>
+<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
 </div>
 </div>
                <div class="row">
@@ -252,7 +266,7 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
         our experimental physics software framework using Brainwave as
         a cloud (edge or on-premises) service, and a maximum throughput of 600-700 inferences per second.</p>
 	<p>Paper: <a href="https://doi.org/10.1007/s41781-019-0027-2">Comput. Softw. Big. Sci. 3, 13 (2019)</a>
-	<br>Code: <a href="https://github.com/hls-fpga-machine-learning/SonicCMS">https://github.com/hls-fpga-machine-learning/SonicCMS</a>
+	<br>Code: <a href="https://github.com/fastmachinelearning/SonicCMS">https://github.com/fastmachinelearning/SonicCMS</a>
       </div>
     </div>
     <!-- /.row -->
@@ -273,7 +287,7 @@ href="https://arxiv.org/abs/2006.13251">arXiv:2006.13251</a>
     substructure model, we fit well within the available resources of
 	modern FPGAs with a latency on the scale of 100 ns.</p>
 	<p>Paper: <a href="https://doi.org/10.1088/1748-0221/13/07/P07027">J. Instrum. 13, P07027 (2018)</a>
-	<br>Code: <a href="https://github.com/hls-fpga-machine-learning/hls4ml">https://github.com/hls-fpga-machine-learning/hls4ml</a>
+	<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
       </div>
     </div>
     <!-- /.row -->
