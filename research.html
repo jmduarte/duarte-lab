@@ -80,6 +80,36 @@
 
     <!-- Intro Content -->
     <div class="row">
+    <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="images/slider.png" alt="" width="500">
+    </div>
+    <div class="col-lg-6">
+    <h2>\(\texttt{hls4ml}\): An Open-Source Codesign Workflow to Empower Scientific Low-Power Machine Learning Devices</h2>
+    <p>To support domain scientists, we have developed \(\texttt{hls4ml}\), an open-source software-hardware codesign workflow to interpret and translate machine learning algorithms for implementation with both FPGA and ASIC technologies.
+      We expand on previous \(\texttt{hls4ml}\) work by extending capabilities and techniques towards low-power implementations and increased usability: new Python APIs, quantization-aware pruning, end-to-end FPGA workflows, long pipeline kernels for low power, and new device backends include an ASIC workflow.
+      Taken together, these and continued efforts in \(\texttt{hls4ml}\) will arm a new generation of domain scientists with accessible, efficient, and powerful tools for machine-learning-accelerated discovery.
+    </p>
+    <p>Paper: <a href="https://arxiv.org/abs/2103.05579">arXiv:2103.05579</a>
+    <br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="images/nn.png" alt="" width="500">
+    </div>
+    <div class="col-lg-6">
+    <h2>Ps and Qs: Quantization-aware pruning for efficient low latency neural network inference</h2>
+    <p>We explore the interplay between pruning and quantization during the training of neural networks for ultra low latency applications targeting high energy physics use cases.
+      However, techniques developed for this study have potential application across many other domains.
+      We study various configurations of pruning during quantization-aware training, which we term <em>quantization-aware pruning</em> and the effect of techniques like regularization, batch normalization, and different pruning schemes on multiple computational or neural efficiency metrics.
+      We find that quantization-aware pruning yields more computationally efficient models than either pruning or quantization alone for our task.
+      Further, quantization-aware pruning typically performs similar to or better in terms of computational efficiency compared to standard neural architecture optimization techniques. While the accuracy for the benchmark application may be similar, the information content of the network can vary significantly based on the training configuration.
+    </p>
+    <p>Paper: <a href="https://arxiv.org/abs/2102.11289">arXiv:2102.11289</a>
+    <br>Code: <a href="https://github.com/ben-hawks/pytorch-jet-classify">https://github.com/ben-hawks/pytorch-jet-classify</a>
+    </div>
+    </div>
+    <div class="row">
 <div class="col-lg-6">
 <iframe width="504" height="378" src="https://www.youtube-nocookie.com/embed/QsJRi6CO7kk?autoplay=0&rel=0&vq=hd1080&loop=1&playlist=QsJRi6CO7kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -119,7 +149,7 @@
 <div class="col-lg-6">
 <h2>Accelerated charged particle tracking with graph neural networks on FPGAs</h2>
 <p>We develop and study FPGA implementations of algorithms for charged particle tracking based on graph neural networks.
-  The two complementary FPGA designs are based on OpenCL, a framework for writing programs that execute across heterogeneous platforms, and hls4ml, a high-level-synthesis-based compiler for neural network to firmware conversion.
+  The two complementary FPGA designs are based on OpenCL, a framework for writing programs that execute across heterogeneous platforms, and \(\texttt{hls4ml}\), a high-level-synthesis-based compiler for neural network to firmware conversion.
   We evaluate and compare the resource usage, latency, and tracking performance of our implementations based on a benchmark dataset.
   We find a considerable speedup over CPU-based execution is possible, potentially enabling such algorithms to be used effectively in future computing workflows and the FPGA-based Level-1 trigger at the CERN Large Hadron Collider.
 </p>
