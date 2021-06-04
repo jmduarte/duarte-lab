@@ -127,37 +127,64 @@
   <!-- Content Row -->
   <div class="row">
     <div class="col-lg-8 mb-4">
-<h2>Tutorials</h2>
-<ul>
-  <li>Interexperiment Machine Learning Group, "HEP-ML Resources", <a href="https://github.com/iml-wg/HEP-ML-Resources">https://github.com/iml-wg/HEP-ML-Resources</a>
-  </li>
-  <li>CMS Data Analysis School (DAS) 2020 machine learning short exercise, <a href="https://github.com/riga/cmsdas2020_ml">https://github.com/riga/cmsdas2020_ml</a>
-  </li>
-  <li>Fermilab LHC Physics Center (LPC) machine learning hands-on advanced tutorial session (HATS) 2020, <a href="https://github.com/FNALLPC/machine-learning-hats">https://github.com/FNALLPC/machine-learning-hats</a>, <a href="https://indico.cern.ch/event/917681/">https://indico.cern.ch/event/917681/</a> (access key: MLHATS2020).
-  </li>
-  <li>UCSD particle physics and machine learning data science capstone project, <a href="http://jmduarte.github.io/capstone-particle-physics-domain/">http://jmduarte.github.io/capstone-particle-physics-domain</a>.
-  </li>
-  <li>Fermilab LPC HATS, <a href="https://lpc.fnal.gov/programs/schools-workshops/hats.shtml">https://lpc.fnal.gov/programs/schools-workshops/hats.shtml</a>.
-  </li>
-  <li>CMS DAS 2020 ROOT short exercise, <a href="https://cmsdas.github.io/root-short-exercise/">https://cmsdas.github.io/root-short-exercise/</a>.
-  </li>
-  <li>HSF training uproot tutorial, <a href="https://hsf-training.github.io/hsf-training-uproot-webpage/">https://hsf-training.github.io/hsf-training-uproot-webpage/</a>.
-  </li>
-  <li>CMS related terminology, <a href="https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookIntroGetStart">https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookIntroGetStart</a>.
-  </li>
-  <li>FPGA-based deployment of machine learning algorithms with hls4ml tutorial, <a href="https://github.com/hls-fpga-machine-learning/hls4ml-tutorial/tree/fpl2020">https://github.com/hls-fpga-machine-learning/hls4ml-tutorial/tree/fpl2020</a>.
-  </li>
-  <li>Training an MNIST classifier, <a href="https://nextjournal.com/gkoehler/pytorch-mnist">https://nextjournal.com/gkoehler/pytorch-mnist</a>.
-  </li>
-  <li>Training an MNIST GAN, <a href="https://debuggercafe.com/generating-mnist-digit-images-using-vanilla-gan-with-pytorch/">https://debuggercafe.com/generating-mnist-digit-images-using-vanilla-gan-with-pytorch/</a>.
-  </li>
-  <li>Getting started with Conda, <a href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">https://conda.io/projects/conda/en/latest/user-guide/getting-started.html</a>.
-  </li>
-  <li>Graph Networks and PyTorch Geometric, <a href="https://towardsdatascience.com/understanding-graph-neural-network-using-pytorch-geometric-c77a7ad76459">https://towardsdatascience.com/understanding-graph-neural-network-using-pytorch-geometric-c77a7ad76459</a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/colabs.html">https://pytorch-geometric.readthedocs.io/en/latest/notes/colabs.html</a>
-  </li>
-</ul>
+  <h2>Tutorials</h2>
+  In each of the 3 sections below, the tutorials are ordered by difficulty (easiest to hardest) in our own view. To get started, we suggest you start with (2) and once you finish a few of these tutorials jump directly to (3).   <p />
+
+  We suggest you go through this <a href="https://github.com/jmduarte/duarte-lab/blob/gh-pages/rsources_README.md">ReadMe</a> before you embark on your journey..<p />
+
+  Also, feel free to look at <a href="https://github.com/iml-wg/HEP-ML-Resources">this</a> for a complete list of ML activities in particle physics.
+
+  <h3>(1) Particle Physics (HEP)</h3>
+  <ul>
+    <li><a href="https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookIntroGetStart">CMS related terminology</a>: this twiki probably contains everything there is to know about CMS. We suggest you skip it for now but always know that it's there for you :)
+    </li>
+    <li><a href="https://hsf-training.github.io/hsf-training-uproot-webpage/">UpRoot tutorial</a>: a python package that can read and write files in the .root format without actually requiring or running the ROOT software at all.
+    </li>
+    <li><a href="https://cmsdas.github.io/root-short-exercise/">ROOT tutorial</a>: an open-source data analysis framework used in HEP, which lets you save and access your experiment’s data, allows you to process the data in a computationally efficient and statistically sound way and gives you access to all tools to produce publication-quality results. Basically it is C++ with many predefined classes and function.
+    </li>
+    <li><a href="https://lpc.fnal.gov/programs/schools-workshops/hats.shtml">Fermilab-LPC-HATS</a>: a set of tutorials covering different aspects of HEP. Topics include: MET, Trigger, jet-algorithms, etc.
+    </li>
+  </ul>
+
+  <h3>(2) Machine Learning (ML)</h3>
+  <ul>
+    <li><a href="https://github.com/faroukmokhtar/wuhan_DL_labs/blob/master/general/Intro_Numpy.ipynb">Introduction to numpy</a>: a very useful python package for array manipulation.
+    </li>
+    <li><a href="https://github.com/faroukmokhtar/wuhan_DL_labs/blob/master/general/Matplotlib_Cheatsheet.ipynb">Introduction to Matplotlib</a>: a very useful python package for plotting.
+    </li>
+    <li><a href="https://github.com/faroukmokhtar/wuhan_DL_labs/blob/master/general/Intro_DL_with_Keras_1.ipynb">Introduction to deep learning part-I</a>: guides you to build a basic deep neural network (DNN).
+    </li>
+    <li><a href="https://github.com/faroukmokhtar/wuhan_DL_labs/blob/master/general/Intro_DL_with_Keras_2.ipynb">Introduction to deep learning part-II</a>: guides you to a more complicated example.
+    </li>
+    <li><a href="https://nextjournal.com/gkoehler/pytorch-mnist">Training an MNIST classifier</a>: guides you to build a convolution neural network (CNN) to recognize handwritten digits.
+    </li>
+    <li><a href="https://debuggercafe.com/generating-mnist-digit-images-using-vanilla-gan-with-pytorch/">Training an MNIST GAN</a>: guides you to build a generative adversarial network (GAN) to generate those handwritten digits.
+    </li>
+    <li><a href="https://towardsdatascience.com/understanding-graph-neural-network-using-pytorch-geometric-c77a7ad76459">Introduction to Graph Neural Networks (GNNs)</a>: simple introduction to geometric deep learning.
+    </li>
+    <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/colabs.html">GNNs using PyTorch Geometric</a>: a set of 6 colab notebooks that allows you to experiment with GNN's using pytorch geometric for numerous ML tasks.
+    </li>
+    <li><a href="https://github.com/hls-fpga-machine-learning/hls4ml-tutorial/tree/fpl2020">FPGA-based deployment of ML algorithms with hls4ml </a>: a set of 4-notebooks that guide you to implement and convert ML algroithms using hls4ml for implementation on FPGA's.
+    </li>
+  </ul>
+
+  <h3>(3) ML in HEP</h3>
+
+  <ul>
+    <li><a href="https://github.com/faroukmokhtar/wuhan_DL_labs/blob/master/top-tagging/TopTagging_1.ipynb">Top-tagging part-I</a>: introduces you to "top-tagging", a physics task, that can be tackled by ML techniques.
+    </li>
+    <li><a href="https://github.com/faroukmokhtar/wuhan_DL_labs/blob/master/top-tagging/TopTagging_2.ipynb">Top-tagging part-II</a>: explores a more complicated (but hence rewarding) ML approach to tackle the same task, top-tagging.
+    </li>
+    <li><a href="https://github.com/riga/cmsdas2020_ml/blob/master/exercise.ipynb">CMSDAS-2020-ML</a>: a similar run through top-tagging.
+    </li>
+    <li><a href="http://jmduarte.github.io/capstone-particle-physics-domain">UCSD particle physics and ML data science capstone project</a>: a set of 9-week material (8-notebooks) that guides you to the task of jet-classification. It takes you from data exploration to building classifiers to making the classifiers robust to improving those classifiers by using a GNN architecure called "InteractionNetwork".
+    </li>
+    <li><a href="https://github.com/FNALLPC/machine-learning-hats">Fermilab-LPC-HATS-2020-ML</a>: a similar set of 10-notebooks that provides you with a comprehensive guide to the task of jet-classification.
+    </li>
+  </ul>
+      </div>
     </div>
-  </div>
+
 
   <div class="row">
     <div class="col-lg-8 mb-4">
