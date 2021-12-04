@@ -81,6 +81,36 @@
     <!-- Intro Content -->
     <div class="row">
     <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="images/msg_passing.png" alt="" width="500">
+    </div>
+    <div class="col-lg-6">
+    <h2>Explaining machine-learned particle-flow reconstruction</h2>
+    <p>The particle-flow (PF) algorithm is used in general-purpose particle detectors to reconstruct a comprehensive particle-level view of the collision by combining information from different subdetectors.
+      A graph neural network (GNN) model, known as the machine-learned particle-flow (MLPF) algorithm, has been developed to substitute the rule-based PF algorithm.
+      However, understanding the model's decision making is not straightforward, especially given the complexity of the set-to-set prediction task, dynamic graph building, and message-passing steps.
+      In this paper, we adapt the layerwise-relevance propagation technique for GNNs and apply it to the MLPF algorithm to gauge the relevant nodes and features for its predictions.
+      Through this process, we gain insight into the model's decision-making.
+    </p>
+    <p>Paper: <a href="https://arxiv.org/abs/2111.12840">arXiv:2111.12840</a>
+    <br>Code: <a href="https://github.com/faroukmokhtar/particleflow">https://github.com/faroukmokhtar/particleflow</a>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="images/bb1_bump_0.70.png" alt="" width="500">
+    </div>
+    <div class="col-lg-6">
+    <h2>Particle Graph Autoencoders and Differentiable, Learned Energy Mover's Distance</h2>
+    <p>Autoencoders have useful applications in high energy physics in anomaly detection, particularly for jets---collimated showers of particles produced in collisions such as those at the CERN Large Hadron Collider.
+      We explore the use of graph-based autoencoders, which operate on jets in their "particle cloud" representations and can leverage the interdependencies among the particles within a jet, for such tasks.
+      Additionally, we develop a differentiable approximation to the energy mover's distance via a graph neural network, which may subsequently be used as a reconstruction loss function for autoencoders.
+    </p>
+    <p>Paper: <a href="https://arxiv.org/abs/2111.12849">arXiv:2111.12849</a>
+    <br>Code: <a href="https://github.com/ucsd-hep-ex/GraphAE">https://github.com/ucsd-hep-ex/GraphAE</a>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
       <img class="img-fluid rounded mb-4" src="images/mpgan_mass.png" alt="" width="500">
     </div>
     <div class="col-lg-6">
