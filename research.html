@@ -79,6 +79,58 @@
     </ol>
 
     <!-- Intro Content -->
+    <p>See also: <a itemprop="sameAs" content="https://orcid.org/0000-0002-5076-7096" href="https://orcid.org/0000-0002-5076-7096" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right;" alt=" ORCID iD icon">ORCID</a>,
+                  <a href="https://inspirehep.net/authors/1054778"><img src="images/inspire.jpg" width=20px> INSPIRE</a>,
+                  <span id="badgeCont218"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont218&rid=AAA-5414-2020&size=small"></script></span><a href="https://publons.com/researcher/AAA-5414-2020/"> Publons</a>,
+                  <a href="https://arxiv.org/a/duarte_j_1.html"><img src="images/arxiv_logo.svg" width=22px> arXiv</a>,
+                  <a href="https://scholar.google.com/citations?user=GTtW9H0AAAAJ"><img src="images/google_scholar_logo.svg" width=20px> Google Scholar</a><br><br>
+    <div class="row">
+    <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="images/flow_wide.png" alt="" width="500">
+    </div>
+    <div class="col-lg-6">
+    <h2>Graph Neural Networks for Charged Particle Tracking on FPGAs</h2>
+    <p>The determination of charged particle trajectories in collisions at the CERN Large Hadron Collider (LHC) is an important but challenging problem, especially in the high interaction density conditions expected during the future high-luminosity phase of the LHC (HL-LHC).
+      Graph neural networks (GNNs) are a type of geometric deep learning algorithm that has successfully been applied to this task by embedding tracker data as a graph -- nodes represent hits, while edges represent possible track segments -- and classifying the edges as true or fake track segments.
+      However, their study in hardware- or software-based trigger applications has been limited due to their large computational cost.
+      In this paper, we introduce an automated translation workflow, integrated into a broader tool called \(\texttt{hls4ml}\), for converting GNNs into firmware for field-programmable gate arrays (FPGAs).
+      We use this translation tool to implement GNNs for charged particle tracking, trained using the TrackML challenge dataset, on FPGAs with designs targeting different graph sizes, task complexites, and latency/throughput requirements.
+      This work could enable the inclusion of charged particle tracking GNNs at the trigger level for HL-LHC experiments.
+    </p>
+    <p>Paper: <a href="https://arxiv.org/abs/2112.02048">arXiv:2111.02048</a>
+    <br>Code: <a href="https://github.com/abdelabd/hls4ml/tree/pyg_to_hls_rebase_w_dataflow">https://github.com/abdelabd/hls4ml/tree/pyg_to_hls_rebase_w_dataflow</a>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="images/msg_passing.png" alt="" width="500">
+    </div>
+    <div class="col-lg-6">
+    <h2>Explaining machine-learned particle-flow reconstruction</h2>
+    <p>The particle-flow (PF) algorithm is used in general-purpose particle detectors to reconstruct a comprehensive particle-level view of the collision by combining information from different subdetectors.
+      A graph neural network (GNN) model, known as the machine-learned particle-flow (MLPF) algorithm, has been developed to substitute the rule-based PF algorithm.
+      However, understanding the model's decision making is not straightforward, especially given the complexity of the set-to-set prediction task, dynamic graph building, and message-passing steps.
+      In this paper, we adapt the layerwise-relevance propagation technique for GNNs and apply it to the MLPF algorithm to gauge the relevant nodes and features for its predictions.
+      Through this process, we gain insight into the model's decision-making.
+    </p>
+    <p>Paper: <a href="https://arxiv.org/abs/2111.12840">arXiv:2111.12840</a>
+    <br>Code: <a href="https://github.com/faroukmokhtar/particleflow">https://github.com/faroukmokhtar/particleflow</a>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="images/bb1_bump_0.70.png" alt="" width="500">
+    </div>
+    <div class="col-lg-6">
+    <h2>Particle Graph Autoencoders and Differentiable, Learned Energy Mover's Distance</h2>
+    <p>Autoencoders have useful applications in high energy physics in anomaly detection, particularly for jets---collimated showers of particles produced in collisions such as those at the CERN Large Hadron Collider.
+      We explore the use of graph-based autoencoders, which operate on jets in their "particle cloud" representations and can leverage the interdependencies among the particles within a jet, for such tasks.
+      Additionally, we develop a differentiable approximation to the energy mover's distance via a graph neural network, which may subsequently be used as a reconstruction loss function for autoencoders.
+    </p>
+    <p>Paper: <a href="https://arxiv.org/abs/2111.12849">arXiv:2111.12849</a>
+    <br>Code: <a href="https://github.com/ucsd-hep-ex/GraphAE">https://github.com/ucsd-hep-ex/GraphAE</a>
+    </div>
+    </div>
     <div class="row">
     <div class="col-lg-6">
       <img class="img-fluid rounded mb-4" src="images/mpgan_mass.png" alt="" width="500">
