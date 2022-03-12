@@ -13,24 +13,25 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110952733-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110952733-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-110952733-2');
-</script>
+    gtag('config', 'UA-110952733-2');
+  </script>
 </head>
 
 <body>
@@ -38,8 +39,13 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><h4>Duarte Lab @ UCSD <font color="lightgray"><small>Particle Physics and Machine Learning</small></font></h4></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">
+        <h4>Duarte Lab @ UCSD <font color="lightgray"><small>Particle Physics and Machine Learning</small></font>
+        </h4>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -79,437 +85,589 @@
     </ol>
 
     <!-- Intro Content -->
-    <p>See also: <a itemprop="sameAs" content="https://orcid.org/0000-0002-5076-7096" href="https://orcid.org/0000-0002-5076-7096" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right;" alt=" ORCID iD icon">ORCID</a>,
-                  <a href="https://inspirehep.net/authors/1054778"><img src="images/inspire.jpg" width=20px> INSPIRE</a>,
-                  <span id="badgeCont218"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont218&rid=AAA-5414-2020&size=small"></script></span><a href="https://publons.com/researcher/AAA-5414-2020/"> Publons</a>,
-                  <a href="https://arxiv.org/a/duarte_j_1.html"><img src="images/arxiv_logo.svg" width=22px> arXiv</a>,
-                  <a href="https://scholar.google.com/citations?user=GTtW9H0AAAAJ"><img src="images/google_scholar_logo.svg" width=20px> Google Scholar</a><br><br>
+    <p>See also: <a itemprop="sameAs" content="https://orcid.org/0000-0002-5076-7096"
+        href="https://orcid.org/0000-0002-5076-7096" target="orcid.widget" rel="me noopener noreferrer"
+        style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+          style="width:1em;margin-right;" alt=" ORCID iD icon">ORCID</a>,
+      <a href="https://inspirehep.net/authors/1054778"><img src="images/inspire.jpg" width=20px> INSPIRE</a>,
+      <span id="badgeCont218">
+        <script type="text/javascript"
+          src="https://publons.com/mashlets?el=badgeCont218&rid=AAA-5414-2020&size=small"></script>
+      </span><a href="https://publons.com/researcher/AAA-5414-2020/"> Publons</a>,
+      <a href="https://arxiv.org/a/duarte_j_1.html"><img src="images/arxiv_logo.svg" width=22px> arXiv</a>,
+      <a href="https://scholar.google.com/citations?user=GTtW9H0AAAAJ"><img src="images/google_scholar_logo.svg"
+          width=20px> Google Scholar</a><br><br>
     <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/flow_wide.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Graph Neural Networks for Charged Particle Tracking on FPGAs</h2>
-    <p>The determination of charged particle trajectories in collisions at the CERN Large Hadron Collider (LHC) is an important but challenging problem, especially in the high interaction density conditions expected during the future high-luminosity phase of the LHC (HL-LHC).
-      Graph neural networks (GNNs) are a type of geometric deep learning algorithm that has successfully been applied to this task by embedding tracker data as a graph -- nodes represent hits, while edges represent possible track segments -- and classifying the edges as true or fake track segments.
-      However, their study in hardware- or software-based trigger applications has been limited due to their large computational cost.
-      In this paper, we introduce an automated translation workflow, integrated into a broader tool called \(\texttt{hls4ml}\), for converting GNNs into firmware for field-programmable gate arrays (FPGAs).
-      We use this translation tool to implement GNNs for charged particle tracking, trained using the TrackML challenge dataset, on FPGAs with designs targeting different graph sizes, task complexites, and latency/throughput requirements.
-      This work could enable the inclusion of charged particle tracking GNNs at the trigger level for HL-LHC experiments.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2112.02048">arXiv:2111.02048</a>
-    <br>Code: <a href="https://github.com/abdelabd/hls4ml/tree/pyg_to_hls_rebase_w_dataflow">https://github.com/abdelabd/hls4ml/tree/pyg_to_hls_rebase_w_dataflow</a>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/msg_passing.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Explaining machine-learned particle-flow reconstruction</h2>
-    <p>The particle-flow (PF) algorithm is used in general-purpose particle detectors to reconstruct a comprehensive particle-level view of the collision by combining information from different subdetectors.
-      A graph neural network (GNN) model, known as the machine-learned particle-flow (MLPF) algorithm, has been developed to substitute the rule-based PF algorithm.
-      However, understanding the model's decision making is not straightforward, especially given the complexity of the set-to-set prediction task, dynamic graph building, and message-passing steps.
-      In this paper, we adapt the layerwise-relevance propagation technique for GNNs and apply it to the MLPF algorithm to gauge the relevant nodes and features for its predictions.
-      Through this process, we gain insight into the model's decision-making.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2111.12840">arXiv:2111.12840</a>
-    <br>Code: <a href="https://github.com/faroukmokhtar/particleflow">https://github.com/faroukmokhtar/particleflow</a>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/bb1_bump_0.70.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Particle Graph Autoencoders and Differentiable, Learned Energy Mover's Distance</h2>
-    <p>Autoencoders have useful applications in high energy physics in anomaly detection, particularly for jets---collimated showers of particles produced in collisions such as those at the CERN Large Hadron Collider.
-      We explore the use of graph-based autoencoders, which operate on jets in their "particle cloud" representations and can leverage the interdependencies among the particles within a jet, for such tasks.
-      Additionally, we develop a differentiable approximation to the energy mover's distance via a graph neural network, which may subsequently be used as a reconstruction loss function for autoencoders.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2111.12849">arXiv:2111.12849</a>
-    <br>Code: <a href="https://github.com/ucsd-hep-ex/GraphAE">https://github.com/ucsd-hep-ex/GraphAE</a>
-    </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/flow_wide.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Graph Neural Networks for Charged Particle Tracking on FPGAs</h2>
+        <p>The determination of charged particle trajectories in collisions at the CERN Large Hadron Collider (LHC) is
+          an important but challenging problem, especially in the high interaction density conditions expected during
+          the future high-luminosity phase of the LHC (HL-LHC).
+          Graph neural networks (GNNs) are a type of geometric deep learning algorithm that has successfully been
+          applied to this task by embedding tracker data as a graph -- nodes represent hits, while edges represent
+          possible track segments -- and classifying the edges as true or fake track segments.
+          However, their study in hardware- or software-based trigger applications has been limited due to their large
+          computational cost.
+          In this paper, we introduce an automated translation workflow, integrated into a broader tool called
+          \(\texttt{hls4ml}\), for converting GNNs into firmware for field-programmable gate arrays (FPGAs).
+          We use this translation tool to implement GNNs for charged particle tracking, trained using the TrackML
+          challenge dataset, on FPGAs with designs targeting different graph sizes, task complexites, and
+          latency/throughput requirements.
+          This work could enable the inclusion of charged particle tracking GNNs at the trigger level for HL-LHC
+          experiments.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2112.02048">arXiv:2111.02048</a>
+          <br>Code: <a
+            href="https://github.com/abdelabd/hls4ml/tree/pyg_to_hls_rebase_w_dataflow">https://github.com/abdelabd/hls4ml/tree/pyg_to_hls_rebase_w_dataflow</a>
+      </div>
     </div>
     <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/mpgan_mass.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Particle Cloud Generation with Message Passing Generative Adversarial Networks</h2>
-    <p>In high energy physics (HEP), jets are collections of correlated particles produced ubiquitously in particle collisions such as those at the CERN Large Hadron Collider (LHC).
-      Machine-learning-based generative models, such as generative adversarial networks (GANs), have the potential to significantly accelerate LHC jet simulations.
-      Despite jets having a natural representation as a set of particles in momentum-space, a.k.a. a particle cloud, there exist no generative models for such a dataset.
-      We introduce a new particle cloud dataset (JetNet), and apply existing point cloud GANs to it.
-      Existing GANs are found to be inadequate for physics applications, hence we develop a new message passing GAN (MPGAN), which outperforms existing point cloud GANs.
-      We propose JetNet as a novel point-cloud-style dataset for the machine learning community to experiment with, and set MPGAN as a benchmark to improve upon for future generative models.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2106.11535">arXiv:2106.11535</a>
-    <br>Code: <a href="https://github.com/rkansal47/MPGAN">https://github.com/rkansal47/MPGAN</a>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/cnn_arch_with_lines.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Autoencoders on FPGAs for real-time, unsupervised new physics detection at 40 MHz at the Large Hadron Collider</h2>
-    <p>We show how to adapt and deploy anomaly detection algorithms based on deep autoencoders, for the unsupervised detection of new physics signatures in the extremely challenging environment of a real-time event selection system at the Large Hadron Collider (LHC).
-      We demonstrate that new physics signatures can be enhanced by three orders of magnitude, while staying within the strict latency and resource constraints of a typical LHC event filtering system.
-      In particular, anomaly detection can be performed in as little as 80 ns using less than 3% of the logic resources of a Xilinx Virtex UltraScale+ VU9P FPGA.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2108.03986">arXiv:2108.03986</a>
-    </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/msg_passing.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Explaining machine-learned particle-flow reconstruction</h2>
+        <p>The particle-flow (PF) algorithm is used in general-purpose particle detectors to reconstruct a comprehensive
+          particle-level view of the collision by combining information from different subdetectors.
+          A graph neural network (GNN) model, known as the machine-learned particle-flow (MLPF) algorithm, has been
+          developed to substitute the rule-based PF algorithm.
+          However, understanding the model's decision making is not straightforward, especially given the complexity of
+          the set-to-set prediction task, dynamic graph building, and message-passing steps.
+          In this paper, we adapt the layerwise-relevance propagation technique for GNNs and apply it to the MLPF
+          algorithm to gauge the relevant nodes and features for its predictions.
+          Through this process, we gain insight into the model's decision-making.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2111.12840">arXiv:2111.12840</a>
+          <br>Code: <a
+            href="https://github.com/faroukmokhtar/particleflow">https://github.com/faroukmokhtar/particleflow</a>
+      </div>
     </div>
     <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/EXO-20-003_overlay.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Search for Higgs boson decays into long-lived particles in associated Z boson production</h2>
-    <p>We present a search for long-lived particles (LLPs) produced in association with a Z boson.
-      The search is performed with data from 13 TeV proton-proton collisions recorded by the CMS experiment during 2016-2018, corresponding to an integrated luminosity of 117 fb\(^{-1}\).
-      The LLPs are assumed to decay into a pair of standard model fermions inside the tracker volume, which results in displaced jets.
-      A trigger and selections based on Z boson decays to electron or muon pairs provide sensitivity to light (15 GeV or less) LLPs, which have up to now been difficult to access.
-      Decays of LLPs are selected by requiring the presence of displaced jets which are identified using information from the CMS tracking system.
-      The results are interpreted in the context of exotic decays of the Higgs boson to LLPs (H\(\to\)SS).
-      The search is sensitive to branching fractions \(\mathcal{B}\)(H\(\to\)SS) of 4-5% (less than 20%) for LLP masses of 40 (15) GeV and mean proper decay lengths of 10-100 mm (10-50 mm).
-    </p>
-    <p>PAS: <a href="https://cds.cern.ch/record/2767507">CMS-PAS-EXO-20-003</a>
-    <br>2D Event display: <a href="https://cds.cern.ch/record/2767342">CMS-PHO-EVENTS-2021-014</a>
-    <br>3D Event display: <a href="https://cms3d.web.cern.ch/EXO-20-003/">CMS-EXO-20-003</a>
-    </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/bb1_bump_0.70.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Particle Graph Autoencoders and Differentiable, Learned Energy Mover's Distance</h2>
+        <p>Autoencoders have useful applications in high energy physics in anomaly detection, particularly for
+          jets---collimated showers of particles produced in collisions such as those at the CERN Large Hadron Collider.
+          We explore the use of graph-based autoencoders, which operate on jets in their "particle cloud"
+          representations and can leverage the interdependencies among the particles within a jet, for such tasks.
+          Additionally, we develop a differentiable approximation to the energy mover's distance via a graph neural
+          network, which may subsequently be used as a reconstruction loss function for autoencoders.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2111.12849">arXiv:2111.12849</a>
+          <br>Code: <a href="https://github.com/ucsd-hep-ex/GraphAE">https://github.com/ucsd-hep-ex/GraphAE</a>
+      </div>
     </div>
     <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/CMS-PAS-EXO-20-015_Figure-aux_004.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Search for long-lived particles decaying in the CMS endcap muon system in proton-proton collisions at \(\sqrt{s}\) = 13 TeV</h2>
-    <p> A search for long-lived particles (LLPs) produced in decays of standard model (SM) Higgs bosons in 137 fb\(^{−1}\) of proton-proton collisions at \(\sqrt{s}\) = 13 TeV recorded by the CMS experiment during 2016-2018 is presented.
-      The search employs a novel technique to reconstruct hadronic decays of LLPs in the endcap muon system.
-      The search is sensitive to a broad range of LLP decay modes including \(\tau^-\tau^+\), LLP masses as low as a few GeV, and is largely model-independent.
-      No excess of events above the SM background is observed and stringent limits on the Higgs boson (h\(^0\)) branching fraction to LLPs (S) are obtained, particularly for proper decay lengths greater than a few meters.
-      This search result represents the most stringent limits on the branching fraction \(\mathcal{B}\)(h\(^0\to\)SS) for proper decay lengths greater than 6-40 m for S masses between 7-40 GeV.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2107.04838">arXiv:2107.04838</a>
-    <br>Figures: <a href="http://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-20-015/index.html">http://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-20-015/index.html</a>
-    <br>3D Event display: <a href="https://cms3d.web.cern.ch/EXO-20-015/">CMS-EXO-20-015</a>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/Autoencoder.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>A reconfigurable neural network ASIC for detector front-end data compression at the HL-LHC</h2>
-    <p>Despite advances in the programmable logic capabilities of modern trigger systems, a significant bottleneck remains in the amount of data to be transported from the detector to off-detector logic where trigger decisions are made.
-      We demonstrate that a neural network autoencoder model can be implemented in a radiation tolerant ASIC to perform lossy data compression alleviating the data transmission problem while preserving critical information of the detector energy profile.
-      For our application, we consider the high-granularity calorimeter from the CMS experiment at the CERN Large Hadron Collider.
-      The advantage of the machine learning approach is in the flexibility and configurability of the algorithm.
-      By changing the neural network weights, a unique data compression algorithm can be deployed for each sensor in different detector regions, and changing detector or collider conditions.
-      To meet area, performance, and power constraints, we perform a quantization-aware training to create an optimized neural network hardware implementation.
-      The design is achieved through the use of high-level synthesis tools and the \(\texttt{hls4ml}\) framework, and was processed through synthesis and physical layout flows based on a LP CMOS 65 nm technology node.
-      The flow anticipates 200 Mrad of ionizing radiation to select gates, and reports a total area of 3.6 mm^2 and consumes 95 mW of power.
-      The simulated energy consumption per inference is 2.4 nJ.
-      This is the first radiation tolerant on-detector ASIC implementation of a neural network that has been designed for particle physics applications.
-    </p>
-    <p>Paper: <a href="https://doi.org/10.1109/TNS.2021.3087100">IEEE Trans. Nucl. Sci., 1 (2021)</a>
-    </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/mpgan_mass.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Particle Cloud Generation with Message Passing Generative Adversarial Networks</h2>
+        <p>In high energy physics (HEP), jets are collections of correlated particles produced ubiquitously in particle
+          collisions such as those at the CERN Large Hadron Collider (LHC).
+          Machine-learning-based generative models, such as generative adversarial networks (GANs), have the potential
+          to significantly accelerate LHC jet simulations.
+          Despite jets having a natural representation as a set of particles in momentum-space, a.k.a. a particle cloud,
+          there exist no generative models for such a dataset.
+          We introduce a new particle cloud dataset (JetNet), and apply existing point cloud GANs to it.
+          Existing GANs are found to be inadequate for physics applications, hence we develop a new message passing GAN
+          (MPGAN), which outperforms existing point cloud GANs.
+          We propose JetNet as a novel point-cloud-style dataset for the machine learning community to experiment with,
+          and set MPGAN as a benchmark to improve upon for future generative models.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2106.11535">arXiv:2106.11535</a>
+          <br>Code: <a href="https://github.com/rkansal47/MPGAN">https://github.com/rkansal47/MPGAN</a>
+      </div>
     </div>
     <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/train_classified_edges.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Charged particle tracking via edge-classifying interaction networks</h2>
-    <p>Tracker events are naturally represented as graphs by identifying hits as nodes and track segments as edges; given a set of hypothesized edges, edge-classifying graph neural networks (GNNs) predict which correspond to real track segments.
-      In this work, we adapt the physics-motivated interaction network (IN) to the problem of charged-particle tracking in the high-pileup conditions expected at the HL-LHC.
-      We demonstrate its excellent edge-classification accuracy and tracking efficiency through a suite of measurements at each stage of GNN-based tracking: graph construction, edge classification, and track building.
-      The proposed IN architecture is substantially smaller than previously studied GNN tracking architectures, a reduction in size critical for enabling GNN-based tracking in constrained computing environments.
-      Furthermore, the IN is easily expressed as a set of matrix operations, making it a promising candidate for acceleration via heterogeneous computing resources.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2103.16701">arXiv:2103.16701</a>
-    <br>Code: <a href="https://github.com/GageDeZoort/interaction_network_paper">https://github.com/GageDeZoort/interaction_network_paper</a>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/slider.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>\(\texttt{hls4ml}\): An Open-Source Codesign Workflow to Empower Scientific Low-Power Machine Learning Devices</h2>
-    <p>To support domain scientists, we have developed \(\texttt{hls4ml}\), an open-source software-hardware codesign workflow to interpret and translate machine learning algorithms for implementation with both FPGA and ASIC technologies.
-      We expand on previous \(\texttt{hls4ml}\) work by extending capabilities and techniques towards low-power implementations and increased usability: new Python APIs, quantization-aware pruning, end-to-end FPGA workflows, long pipeline kernels for low power, and new device backends include an ASIC workflow.
-      Taken together, these and continued efforts in \(\texttt{hls4ml}\) will arm a new generation of domain scientists with accessible, efficient, and powerful tools for machine-learning-accelerated discovery.
-    </p>
-    <p>Paper: <a href="https://arxiv.org/abs/2103.05579">arXiv:2103.05579</a>
-    <br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
-    </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/cnn_arch_with_lines.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Autoencoders on FPGAs for real-time, unsupervised new physics detection at 40 MHz at the Large Hadron
+          Collider</h2>
+        <p>We show how to adapt and deploy anomaly detection algorithms based on deep autoencoders, for the unsupervised
+          detection of new physics signatures in the extremely challenging environment of a real-time event selection
+          system at the Large Hadron Collider (LHC).
+          We demonstrate that new physics signatures can be enhanced by three orders of magnitude, while staying within
+          the strict latency and resource constraints of a typical LHC event filtering system.
+          In particular, anomaly detection can be performed in as little as 80 ns using less than 3% of the logic
+          resources of a Xilinx Virtex UltraScale+ VU9P FPGA.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2108.03986">arXiv:2108.03986</a>
+      </div>
     </div>
     <div class="row">
-    <div class="col-lg-6">
-      <img class="img-fluid rounded mb-4" src="images/nn.png" alt="" width="500">
-    </div>
-    <div class="col-lg-6">
-    <h2>Ps and Qs: Quantization-aware pruning for efficient low latency neural network inference</h2>
-    <p>We explore the interplay between pruning and quantization during the training of neural networks for ultra low latency applications targeting high energy physics use cases.
-      However, techniques developed for this study have potential application across many other domains.
-      We study various configurations of pruning during quantization-aware training, which we term <em>quantization-aware pruning</em> and the effect of techniques like regularization, batch normalization, and different pruning schemes on multiple computational or neural efficiency metrics.
-      We find that quantization-aware pruning yields more computationally efficient models than either pruning or quantization alone for our task.
-      Further, quantization-aware pruning typically performs similar to or better in terms of computational efficiency compared to standard neural architecture optimization techniques. While the accuracy for the benchmark application may be similar, the information content of the network can vary significantly based on the training configuration.
-    </p>
-    <p>Paper: <a href="https://doi.org/10.3389/frai.2021.676564">Front. AI 4, 94 (2021)</a>
-    <br>Code: <a href="https://github.com/ben-hawks/pytorch-jet-classify">https://github.com/ben-hawks/pytorch-jet-classify</a>
-    </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/EXO-20-003_overlay.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Search for Higgs boson decays into long-lived particles in associated Z boson production</h2>
+        <p>We present a search for long-lived particles (LLPs) produced in association with a Z boson.
+          The search is performed with data from 13 TeV proton-proton collisions recorded by the CMS experiment during
+          2016-2018, corresponding to an integrated luminosity of 117 fb\(^{-1}\).
+          The LLPs are assumed to decay into a pair of standard model fermions inside the tracker volume, which results
+          in displaced jets.
+          A trigger and selections based on Z boson decays to electron or muon pairs provide sensitivity to light (15
+          GeV or less) LLPs, which have up to now been difficult to access.
+          Decays of LLPs are selected by requiring the presence of displaced jets which are identified using information
+          from the CMS tracking system.
+          The results are interpreted in the context of exotic decays of the Higgs boson to LLPs (H\(\to\)SS).
+          The search is sensitive to branching fractions \(\mathcal{B}\)(H\(\to\)SS) of 4-5% (less than 20%) for LLP
+          masses of 40 (15) GeV and mean proper decay lengths of 10-100 mm (10-50 mm).
+        </p>
+        <p>PAS: <a href="https://cds.cern.ch/record/2767507">CMS-PAS-EXO-20-003</a>
+          <br>2D Event display: <a href="https://cds.cern.ch/record/2767342">CMS-PHO-EVENTS-2021-014</a>
+          <br>3D Event display: <a href="https://cms3d.web.cern.ch/EXO-20-003/">CMS-EXO-20-003</a>
+      </div>
     </div>
     <div class="row">
-<div class="col-lg-6">
-<iframe width="504" height="378" src="https://www.youtube-nocookie.com/embed/QsJRi6CO7kk?autoplay=0&rel=0&vq=hd1080&loop=1&playlist=QsJRi6CO7kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div class="col-lg-6">
-<h2>MLPF: Efficient machine-learned particle-flow reconstruction using graph neural networks</h2>
-<p>In general-purpose particle detectors, the particle flow algorithm may be used to reconstruct a coherent particle-level view of the event by combining information from the calorimeters and the trackers, significantly improving the detector resolution for jets and the missing transverse momentum.
-  In view of the planned high-luminosity upgrade of the CERN Large Hadron Collider, it is necessary to revisit existing reconstruction algorithms and ensure that both the physics and computational performance are sufficient in a high-pileup environment.
-  Recent developments in machine learning may offer a prospect for efficient event reconstruction based on parametric models.
-  We introduce MLPF, an end-to-end trainable machine-learned particle flow algorithm for reconstructing particle flow candidates based on parallelizable, computationally efficient, scalable graph neural networks and a multi-task objective.
-  We report the physics and computational performance of the MLPF algorithm on on a synthetic dataset of top quark-antiquark events in HL-LHC running conditions, including the simulation of multiple interaction effects, and discuss potential next steps and considerations towards ML-based reconstruction in a general purpose particle detector.</p>
-<p>Paper: <a href="https://doi.org/10.1140/epjc/s10052-021-09158-w">Eur. Phys. J. C 81, 381 (2021)</a>
-<br>Code: <a href="https://github.com/jpata/particleflow">https://github.com/jpata/particleflow</a>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6">
-  <img class="img-fluid rounded mb-4" src="images/GAE_new.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>The LHC Olympics 2020: A community challenge for anomaly detection in high energy physics</h2>
-<p>A new paradigm for data-driven, model-agnostic new physics searches at colliders is emerging, and aims to leverage recent breakthroughs in anomaly detection and machine learning.
-  In order to develop and benchmark new anomaly detection methods within this framework, it is essential to have standard datasets.
-  To this end, we have created the LHC Olympics 2020, a community challenge accompanied by a set of simulated collider events.
-  Participants in these Olympics have developed their methods using an R&D dataset and then tested them on black boxes: datasets with an unknown anomaly (or not).
-  This paper will review the LHC Olympics 2020 challenge, including an overview of the competition, a description of methods deployed in the competition, lessons learned from the experience, and implications for data analyses with future datasets as well as future colliders.</p>
-<p>Paper: <a href="https://arxiv.org/abs/2101.08320">arXiv:2101.08320</a>
-<br>Code: <a href="https://github.com/stsan9/AnomalyDetection4Jets">https://github.com/stsan9/AnomalyDetection4Jets</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/CMS-PAS-EXO-20-015_Figure-aux_004.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Search for long-lived particles decaying in the CMS endcap muon system in proton-proton collisions at
+          \(\sqrt{s}\) = 13 TeV</h2>
+        <p> A search for long-lived particles (LLPs) produced in decays of standard model (SM) Higgs bosons in 137
+          fb\(^{−1}\) of proton-proton collisions at \(\sqrt{s}\) = 13 TeV recorded by the CMS experiment during
+          2016-2018 is presented.
+          The search employs a novel technique to reconstruct hadronic decays of LLPs in the endcap muon system.
+          The search is sensitive to a broad range of LLP decay modes including \(\tau^-\tau^+\), LLP masses as low as a
+          few GeV, and is largely model-independent.
+          No excess of events above the SM background is observed and stringent limits on the Higgs boson (h\(^0\))
+          branching fraction to LLPs (S) are obtained, particularly for proper decay lengths greater than a few meters.
+          This search result represents the most stringent limits on the branching fraction
+          \(\mathcal{B}\)(h\(^0\to\)SS) for proper decay lengths greater than 6-40 m for S masses between 7-40 GeV.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2107.04838">arXiv:2107.04838</a>
+          <br>Figures: <a
+            href="http://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-20-015/index.html">http://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-20-015/index.html</a>
+          <br>3D Event display: <a href="https://cms3d.web.cern.ch/EXO-20-015/">CMS-EXO-20-015</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/Autoencoder.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>A reconfigurable neural network ASIC for detector front-end data compression at the HL-LHC</h2>
+        <p>Despite advances in the programmable logic capabilities of modern trigger systems, a significant bottleneck
+          remains in the amount of data to be transported from the detector to off-detector logic where trigger
+          decisions are made.
+          We demonstrate that a neural network autoencoder model can be implemented in a radiation tolerant ASIC to
+          perform lossy data compression alleviating the data transmission problem while preserving critical information
+          of the detector energy profile.
+          For our application, we consider the high-granularity calorimeter from the CMS experiment at the CERN Large
+          Hadron Collider.
+          The advantage of the machine learning approach is in the flexibility and configurability of the algorithm.
+          By changing the neural network weights, a unique data compression algorithm can be deployed for each sensor in
+          different detector regions, and changing detector or collider conditions.
+          To meet area, performance, and power constraints, we perform a quantization-aware training to create an
+          optimized neural network hardware implementation.
+          The design is achieved through the use of high-level synthesis tools and the \(\texttt{hls4ml}\) framework,
+          and was processed through synthesis and physical layout flows based on a LP CMOS 65 nm technology node.
+          The flow anticipates 200 Mrad of ionizing radiation to select gates, and reports a total area of 3.6 mm^2 and
+          consumes 95 mW of power.
+          The simulated energy consumption per inference is 2.4 nJ.
+          This is the first radiation tolerant on-detector ASIC implementation of a neural network that has been
+          designed for particle physics applications.
+        </p>
+        <p>Paper: <a href="https://doi.org/10.1109/TNS.2021.3087100">IEEE Trans. Nucl. Sci., 1 (2021)</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/train_classified_edges.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Charged particle tracking via edge-classifying interaction networks</h2>
+        <p>Tracker events are naturally represented as graphs by identifying hits as nodes and track segments as edges;
+          given a set of hypothesized edges, edge-classifying graph neural networks (GNNs) predict which correspond to
+          real track segments.
+          In this work, we adapt the physics-motivated interaction network (IN) to the problem of charged-particle
+          tracking in the high-pileup conditions expected at the HL-LHC.
+          We demonstrate its excellent edge-classification accuracy and tracking efficiency through a suite of
+          measurements at each stage of GNN-based tracking: graph construction, edge classification, and track building.
+          The proposed IN architecture is substantially smaller than previously studied GNN tracking architectures, a
+          reduction in size critical for enabling GNN-based tracking in constrained computing environments.
+          Furthermore, the IN is easily expressed as a set of matrix operations, making it a promising candidate for
+          acceleration via heterogeneous computing resources.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2103.16701">arXiv:2103.16701</a>
+          <br>Code: <a
+            href="https://github.com/GageDeZoort/interaction_network_paper">https://github.com/GageDeZoort/interaction_network_paper</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/slider.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>\(\texttt{hls4ml}\): An Open-Source Codesign Workflow to Empower Scientific Low-Power Machine Learning
+          Devices</h2>
+        <p>To support domain scientists, we have developed \(\texttt{hls4ml}\), an open-source software-hardware
+          codesign workflow to interpret and translate machine learning algorithms for implementation with both FPGA and
+          ASIC technologies.
+          We expand on previous \(\texttt{hls4ml}\) work by extending capabilities and techniques towards low-power
+          implementations and increased usability: new Python APIs, quantization-aware pruning, end-to-end FPGA
+          workflows, long pipeline kernels for low power, and new device backends include an ASIC workflow.
+          Taken together, these and continued efforts in \(\texttt{hls4ml}\) will arm a new generation of domain
+          scientists with accessible, efficient, and powerful tools for machine-learning-accelerated discovery.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2103.05579">arXiv:2103.05579</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/nn.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Ps and Qs: Quantization-aware pruning for efficient low latency neural network inference</h2>
+        <p>We explore the interplay between pruning and quantization during the training of neural networks for ultra
+          low latency applications targeting high energy physics use cases.
+          However, techniques developed for this study have potential application across many other domains.
+          We study various configurations of pruning during quantization-aware training, which we term
+          <em>quantization-aware pruning</em> and the effect of techniques like regularization, batch normalization, and
+          different pruning schemes on multiple computational or neural efficiency metrics.
+          We find that quantization-aware pruning yields more computationally efficient models than either pruning or
+          quantization alone for our task.
+          Further, quantization-aware pruning typically performs similar to or better in terms of computational
+          efficiency compared to standard neural architecture optimization techniques. While the accuracy for the
+          benchmark application may be similar, the information content of the network can vary significantly based on
+          the training configuration.
+        </p>
+        <p>Paper: <a href="https://doi.org/10.3389/frai.2021.676564">Front. AI 4, 94 (2021)</a>
+          <br>Code: <a
+            href="https://github.com/ben-hawks/pytorch-jet-classify">https://github.com/ben-hawks/pytorch-jet-classify</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <iframe width="504" height="378"
+          src="https://www.youtube-nocookie.com/embed/QsJRi6CO7kk?autoplay=0&rel=0&vq=hd1080&loop=1&playlist=QsJRi6CO7kk"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-6">
+        <h2>MLPF: Efficient machine-learned particle-flow reconstruction using graph neural networks</h2>
+        <p>In general-purpose particle detectors, the particle flow algorithm may be used to reconstruct a coherent
+          particle-level view of the event by combining information from the calorimeters and the trackers,
+          significantly improving the detector resolution for jets and the missing transverse momentum.
+          In view of the planned high-luminosity upgrade of the CERN Large Hadron Collider, it is necessary to revisit
+          existing reconstruction algorithms and ensure that both the physics and computational performance are
+          sufficient in a high-pileup environment.
+          Recent developments in machine learning may offer a prospect for efficient event reconstruction based on
+          parametric models.
+          We introduce MLPF, an end-to-end trainable machine-learned particle flow algorithm for reconstructing particle
+          flow candidates based on parallelizable, computationally efficient, scalable graph neural networks and a
+          multi-task objective.
+          We report the physics and computational performance of the MLPF algorithm on on a synthetic dataset of top
+          quark-antiquark events in HL-LHC running conditions, including the simulation of multiple interaction effects,
+          and discuss potential next steps and considerations towards ML-based reconstruction in a general purpose
+          particle detector.</p>
+        <p>Paper: <a href="https://doi.org/10.1140/epjc/s10052-021-09158-w">Eur. Phys. J. C 81, 381 (2021)</a>
+          <br>Code: <a href="https://github.com/jpata/particleflow">https://github.com/jpata/particleflow</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/GAE_new.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>The LHC Olympics 2020: A community challenge for anomaly detection in high energy physics</h2>
+        <p>A new paradigm for data-driven, model-agnostic new physics searches at colliders is emerging, and aims to
+          leverage recent breakthroughs in anomaly detection and machine learning.
+          In order to develop and benchmark new anomaly detection methods within this framework, it is essential to have
+          standard datasets.
+          To this end, we have created the LHC Olympics 2020, a community challenge accompanied by a set of simulated
+          collider events.
+          Participants in these Olympics have developed their methods using an R&D dataset and then tested them on black
+          boxes: datasets with an unknown anomaly (or not).
+          This paper will review the LHC Olympics 2020 challenge, including an overview of the competition, a
+          description of methods deployed in the competition, lessons learned from the experience, and implications for
+          data analyses with future datasets as well as future colliders.</p>
+        <p>Paper: <a href="https://arxiv.org/abs/2101.08320">arXiv:2101.08320</a>
+          <br>Code: <a
+            href="https://github.com/stsan9/AnomalyDetection4Jets">https://github.com/stsan9/AnomalyDetection4Jets</a>
+      </div>
+    </div>
 
 
 
     <div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/event000001000_section0_rz.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>Accelerated charged particle tracking with graph neural networks on FPGAs</h2>
-<p>We develop and study FPGA implementations of algorithms for charged particle tracking based on graph neural networks.
-  The two complementary FPGA designs are based on OpenCL, a framework for writing programs that execute across heterogeneous platforms, and \(\texttt{hls4ml}\), a high-level-synthesis-based compiler for neural network to firmware conversion.
-  We evaluate and compare the resource usage, latency, and tracking performance of our implementations based on a benchmark dataset.
-  We find a considerable speedup over CPU-based execution is possible, potentially enabling such algorithms to be used effectively in future computing workflows and the FPGA-based Level-1 trigger at the CERN Large Hadron Collider.
-</p>
-<p>Paper: <a href="https://arxiv.org/abs/2012.01563">arXiv:2012.01563</a>
-<br>Code: <a href="https://github.com/vesal-rm/hls4ml/tree/graph_pipeline/example-prjs/graph">https://github.com/vesal-rm/hls4ml/tree/graph_pipeline/example-prjs/graph</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/event000001000_section0_rz.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Accelerated charged particle tracking with graph neural networks on FPGAs</h2>
+        <p>We develop and study FPGA implementations of algorithms for charged particle tracking based on graph neural
+          networks.
+          The two complementary FPGA designs are based on OpenCL, a framework for writing programs that execute across
+          heterogeneous platforms, and \(\texttt{hls4ml}\), a high-level-synthesis-based compiler for neural network to
+          firmware conversion.
+          We evaluate and compare the resource usage, latency, and tracking performance of our implementations based on
+          a benchmark dataset.
+          We find a considerable speedup over CPU-based execution is possible, potentially enabling such algorithms to
+          be used effectively in future computing workflows and the FPGA-based Level-1 trigger at the CERN Large Hadron
+          Collider.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2012.01563">arXiv:2012.01563</a>
+          <br>Code: <a
+            href="https://github.com/vesal-rm/hls4ml/tree/graph_pipeline/example-prjs/graph">https://github.com/vesal-rm/hls4ml/tree/graph_pipeline/example-prjs/graph</a>
+      </div>
+    </div>
     <div class="row">
-    <div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/graphconstructions.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>Graph neural networks for particle tracking and reconstruction</h2>
-<p>We review graph neural networks for particle tracking and event reconstruction in high energy physics, including the mathematical formalism, design considerations, recent applications, and the outlook for their deployment in current and future experiments.
-</p>
-<p>Review: <a href="https://arxiv.org/abs/2012.01249">arXiv:2012.01249</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/graphconstructions.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Graph neural networks for particle tracking and reconstruction</h2>
+        <p>We review graph neural networks for particle tracking and event reconstruction in high energy physics,
+          including the mathematical formalism, design considerations, recent applications, and the outlook for their
+          deployment in current and future experiments.
+        </p>
+        <p>Review: <a href="https://arxiv.org/abs/2012.01249">arXiv:2012.01249</a>
+      </div>
+    </div>
     <div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/mpnn_hor.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>Graph generative adversarial networks for sparse data generation in high energy physics</h2>
-<p>We develop a graph generative adversarial network to generate sparse data sets like those produced at the CERN Large Hadron Collider (LHC).
-  We demonstrate this approach by training on and generating sparse representations of MNIST handwritten digit images and jets of particles in proton-proton collisions like those at the LHC.
-  We find the model successfully generates sparse MNIST digits and particle jet data. We quantify agreement between real and generated data with a graph-based Fréchet Inception distance, and the particle and jet feature-level 1-Wasserstein distance for the MNIST and jet datasets respectively.
-</p>
-<p>Paper: <a href="https://arxiv.org/abs/2012.00173">arXiv:2012.00173</a>
-<br>Code: <a href="https://github.com/rkansal47/graph-gan">https://github.com/rkansal47/graph-gan</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/mpnn_hor.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Graph generative adversarial networks for sparse data generation in high energy physics</h2>
+        <p>We develop a graph generative adversarial network to generate sparse data sets like those produced at the
+          CERN Large Hadron Collider (LHC).
+          We demonstrate this approach by training on and generating sparse representations of MNIST handwritten digit
+          images and jets of particles in proton-proton collisions like those at the LHC.
+          We find the model successfully generates sparse MNIST digits and particle jet data. We quantify agreement
+          between real and generated data with a graph-based Fréchet Inception distance, and the particle and jet
+          feature-level 1-Wasserstein distance for the MNIST and jet datasets respectively.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2012.00173">arXiv:2012.00173</a>
+          <br>Code: <a href="https://github.com/rkansal47/graph-gan">https://github.com/rkansal47/graph-gan</a>
+      </div>
+    </div>
     <div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/schematic.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>Real-time artificial intelligence for accelerator control: A study at the Fermilab Booster</h2>
-<p>We describe a method for precisely regulating the gradient magnet power supply at the Fermilab Booster accelerator complex using a neural network trained via reinforcement learning.
-  We demonstrate preliminary results by training a surrogate machine-learning model on real accelerator data to emulate the Booster environment, and using this surrogate model in turn to train the neural network for its regulation task.
-  We additionally show how the neural networks to be deployed for control purposes may be compiled to execute on field-programmable gate arrays. This capability is important for operational stability in complicated environments such as an accelerator facility.
-</p>
-<p>Paper: <a href="https://arxiv.org/abs/2011.07371">arXiv:2011.07371</a>
-<br>Code: <a href="https://github.com/fermilab-accelerator-ai/control-for-accelerators-in-hep">https://github.com/fermilab-accelerator-ai/control-for-accelerators-in-hep</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/schematic.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Real-time artificial intelligence for accelerator control: A study at the Fermilab Booster</h2>
+        <p>We describe a method for precisely regulating the gradient magnet power supply at the Fermilab Booster
+          accelerator complex using a neural network trained via reinforcement learning.
+          We demonstrate preliminary results by training a surrogate machine-learning model on real accelerator data to
+          emulate the Booster environment, and using this surrogate model in turn to train the neural network for its
+          regulation task.
+          We additionally show how the neural networks to be deployed for control purposes may be compiled to execute on
+          field-programmable gate arrays. This capability is important for operational stability in complicated
+          environments such as an accelerator facility.
+        </p>
+        <p>Paper: <a href="https://arxiv.org/abs/2011.07371">arXiv:2011.07371</a>
+          <br>Code: <a
+            href="https://github.com/fermilab-accelerator-ai/control-for-accelerators-in-hep">https://github.com/fermilab-accelerator-ai/control-for-accelerators-in-hep</a>
+      </div>
+    </div>
     <div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/ml-suite-sever-structure.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>FPGAs-as-a-service toolkit (FaaST)</h2>
-<p>Computing needs for high energy physics are already intensive and are expected to increase drastically in the coming years.
-In this context, heterogeneous computing, specifically as-a-service computing, has the potential for significant gains over traditional computing models.
-Although previous studies and packages in the field of heterogeneous computing have focused on GPUs as accelerators, FPGAs are an extremely promising option as well.
-A series of workflows are developed to establish the performance capabilities of FPGAs as a service.
-Multiple different devices and a range of algorithms for use in high energy physics are studied.
-For a small, dense network, the throughput can be improved by an order of magnitude with respect to GPUs as a service.
-For large convolutional networks, the throughput is found to be comparable to GPUs as a service.
-This work represents the first open-source FPGAs-as-a-service toolkit.
-</p>
-<p>Paper: <a href="https://doi.org/10.1109/H2RC51942.2020.00010">2020 IEEE/ACM H2RC Workshop, p. 38</a>
-<br>Code: <a href="https://github.com/fastmachinelearning/FaaST">https://github.com/fastmachinelearning/FaaST</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/ml-suite-sever-structure.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>FPGAs-as-a-service toolkit (FaaST)</h2>
+        <p>Computing needs for high energy physics are already intensive and are expected to increase drastically in the
+          coming years.
+          In this context, heterogeneous computing, specifically as-a-service computing, has the potential for
+          significant gains over traditional computing models.
+          Although previous studies and packages in the field of heterogeneous computing have focused on GPUs as
+          accelerators, FPGAs are an extremely promising option as well.
+          A series of workflows are developed to establish the performance capabilities of FPGAs as a service.
+          Multiple different devices and a range of algorithms for use in high energy physics are studied.
+          For a small, dense network, the throughput can be improved by an order of magnitude with respect to GPUs as a
+          service.
+          For large convolutional networks, the throughput is found to be comparable to GPUs as a service.
+          This work represents the first open-source FPGAs-as-a-service toolkit.
+        </p>
+        <p>Paper: <a href="https://doi.org/10.1109/H2RC51942.2020.00010">2020 IEEE/ACM H2RC Workshop, p. 38</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/FaaST">https://github.com/fastmachinelearning/FaaST</a>
+      </div>
+    </div>
     <div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/figure_1.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>Distance-weighted graph neural networks on FPGAs for real-time particle reconstruction in high energy physics</h2>
-<p>We use a graph neural network architecture developed for real-time particle reconstruction and identification in a next-generation calorimeter and simplify it to meet the computing constraints of Level-1 trigger systems, including weight quantization.
-  We show how it can be executed with a latency of less than 1\(\mu\)s on an FPGA.
-  Using the \(\texttt{hls4ml}\) library, we convert the compressed models into FPGA firmware.
-  Performance of the synthesized models is presented both in terms of inference accuracy and resource usage.
-</p>
-<p>Paper: <a href="https://doi.org/10.3389/fdata.2020.598927">Front. Big Data 3, 44 (2021)</a>
-<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml/pull/213">https://github.com/fastmachinelearning/hls4ml/pull/213</a>
-</div>
-</div>
-        <div class="row">
-    <div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/GPUaaS.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>GPU coprocessors as a service for deep learning inference in high energy physics</h2>
-<p>We present a comprehensive exploration of the use of GPU-based hardware acceleration for deep learning inference within the data reconstruction workflow of high energy physics.
-  We present several realistic examples and discuss a strategy for the seamless integration of coprocessors so that the CERN LHC can maintain, if not exceed, its current performance throughout its running.
-</p>
-<p>Paper: <a href="https://doi.org/10.1088/2632-2153/abec21">Mach. Learn. Sci. Tech. 2, 035005 (2021)</a>
-<br>Code: <a href="https://github.com/fastmachinelearning/SonicCMS">https://github.com/fastmachinelearning/SonicCMS</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/figure_1.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Distance-weighted graph neural networks on FPGAs for real-time particle reconstruction in high energy
+          physics</h2>
+        <p>We use a graph neural network architecture developed for real-time particle reconstruction and identification
+          in a next-generation calorimeter and simplify it to meet the computing constraints of Level-1 trigger systems,
+          including weight quantization.
+          We show how it can be executed with a latency of less than 1\(\mu\)s on an FPGA.
+          Using the \(\texttt{hls4ml}\) library, we convert the compressed models into FPGA firmware.
+          Performance of the synthesized models is presented both in terms of inference accuracy and resource usage.
+        </p>
+        <p>Paper: <a href="https://doi.org/10.3389/fdata.2020.598927">Front. Big Data 3, 44 (2021)</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/hls4ml/pull/213">https://github.com/fastmachinelearning/hls4ml/pull/213</a>
+      </div>
+    </div>
     <div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/CMS-HIG-19-003_Figure_003-b.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>Inclusive search for highly boosted Higgs bosons decaying to bottom quark-antiquark pairs in proton-proton collisions at \(\sqrt{s}=13\) TeV</h2>
-<p>A search for standard model Higgs bosons (\(\mathrm{H}\)) produced with transverse momentum (\(p_\mathrm{T}\)) greater than 450 GeV and decaying to bottom quark-antiquark pairs (\(\mathrm{b}\overline{\mathrm{b}}\)) is performed using proton-proton collision data collected by the CMS experiment at the LHC at \(\sqrt{s}= 13\) TeV. The data sample corresponds to an integrated luminosity of 137 fb\(^{-1}\). The search is inclusive in the Higgs boson production mode. Highly Lorentz-boosted Higgs bosons decaying to \(\mathrm{b}\overline{\mathrm{b}}\) are reconstructed as single large-radius jets, and are identified using jet substructure and a dedicated b tagging technique based on a deep neural network.
-  For a Higgs boson mass of 125 GeV, an excess of events above the background assuming no Higgs boson production is observed with a local significance of 2.5 standard deviations (\(\sigma\)), while the expectation is 0.7.
-  The corresponding signal strength and local significance with respect to the standard model expectation are \( \mu_\mathrm{H} = 3.7 \pm 1.2 (\mathrm{stat}) ^{+0.6}_{-0.7} (\mathrm{syst}) ^{+0.8}_{−0.5} (\mathrm{theo})\) and \(1.9\,\sigma\).
-  Additionally, an unfolded differential cross section as a function of Higgs boson \(p_\mathrm{T}\) for the gluon fusion production mode is presented, assuming the other production modes occur at the expected rates.
-</p>
-<p>Paper: <a
-href="http://doi.org/10.1007/JHEP12(2020)085">J. High Energy Phys. 12, 085 (2020)</a>
-<br>Figures: <a href="http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-19-003/index.html">http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-19-003</a>
-</div>
-</div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/GPUaaS.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>GPU coprocessors as a service for deep learning inference in high energy physics</h2>
+        <p>We present a comprehensive exploration of the use of GPU-based hardware acceleration for deep learning
+          inference within the data reconstruction workflow of high energy physics.
+          We present several realistic examples and discuss a strategy for the seamless integration of coprocessors so
+          that the CERN LHC can maintain, if not exceed, its current performance throughout its running.
+        </p>
+        <p>Paper: <a href="https://doi.org/10.1088/2632-2153/abec21">Mach. Learn. Sci. Tech. 2, 035005 (2021)</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/SonicCMS">https://github.com/fastmachinelearning/SonicCMS</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/CMS-HIG-19-003_Figure_003-b.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Inclusive search for highly boosted Higgs bosons decaying to bottom quark-antiquark pairs in proton-proton
+          collisions at \(\sqrt{s}=13\) TeV</h2>
+        <p>A search for standard model Higgs bosons (\(\mathrm{H}\)) produced with transverse momentum
+          (\(p_\mathrm{T}\)) greater than 450 GeV and decaying to bottom quark-antiquark pairs
+          (\(\mathrm{b}\overline{\mathrm{b}}\)) is performed using proton-proton collision data collected by the CMS
+          experiment at the LHC at \(\sqrt{s}= 13\) TeV. The data sample corresponds to an integrated luminosity of 137
+          fb\(^{-1}\). The search is inclusive in the Higgs boson production mode. Highly Lorentz-boosted Higgs bosons
+          decaying to \(\mathrm{b}\overline{\mathrm{b}}\) are reconstructed as single large-radius jets, and are
+          identified using jet substructure and a dedicated b tagging technique based on a deep neural network.
+          For a Higgs boson mass of 125 GeV, an excess of events above the background assuming no Higgs boson production
+          is observed with a local significance of 2.5 standard deviations (\(\sigma\)), while the expectation is 0.7.
+          The corresponding signal strength and local significance with respect to the standard model expectation are \(
+          \mu_\mathrm{H} = 3.7 \pm 1.2 (\mathrm{stat}) ^{+0.6}_{-0.7} (\mathrm{syst}) ^{+0.8}_{−0.5} (\mathrm{theo})\)
+          and \(1.9\,\sigma\).
+          Additionally, an unfolded differential cross section as a function of Higgs boson \(p_\mathrm{T}\) for the
+          gluon fusion production mode is presented, assuming the other production modes occur at the expected rates.
+        </p>
+        <p>Paper: <a href="http://doi.org/10.1007/JHEP12(2020)085">J. High Energy Phys. 12, 085 (2020)</a>
+          <br>Figures: <a
+            href="http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-19-003/index.html">http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-19-003</a>
+      </div>
+    </div>
 
-<div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/binary_ternary_architecture.png" alt="" width="500">
-</div>
-<div class="col-lg-6">
-<h2>Compressing deep neural networks on FPGAs to binary and ternary precision with \(\texttt{hls4ml}\)</h2>
-<p>We present the implementation of binary and ternary neural networks in the \(\texttt{hls4ml}\) library, designed to automatically convert deep neural network models to digital circuits with FPGA firmware.
-  We investigate different strategies to reduce networks' resource consumption by reducing the numerical precision of the network parameters to binary or ternary.
-  We discuss the trade-off between model accuracy and resource consumption.
-  In addition, we show how to balance between latency and accuracy by retaining full precision on a selected subset of network components.
-  As examples, we consider two multiclass classification tasks: handwritten digit recognition with the MNIST data set and jet identification with simulated proton-proton collisions at the CERN Large Hadron Collider. The binary and ternary implementation has similar performance to the higher precision implementation while using drastically fewer FPGA resources.
-</p>
-<p>Paper: <a href="https://doi.org/10.1088/2632-2153/aba042">Mach. Learn.: Sci. Technol. 2, 015001 (2020)</a>
-<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6">
-<img class="img-fluid rounded mb-4" src="images/bdt_node.png" alt="" width="400">
-</div>
-<div class="col-lg-6">
-<h2>Fast inference of boosted decision trees in FPGAs for particle physics</h2>
-<p>We describe the implementation of boosted decision trees in the \(\texttt{hls4ml}\) library, which allows the translation of a trained model into FPGA firmware through an automated conversion process.
-  Thanks to its fully on-chip implementation, \(\texttt{hls4ml}\) performs inference of boosted decision tree models with extremely low latency.
-  With a typical latency less than 100 ns, this solution is suitable for FPGA-based real-time processing, such as in the Level-1 trigger system of a collider experiment.
-</p>
-<p>Paper: <a href="https://doi.org/10.1088/1748-0221/15/05/p05026">J. Instrum. 15, P05026 (2020)</a>
-<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
-</div>
-</div>
-               <div class="row">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/binary_ternary_architecture.png" alt="" width="500">
+      </div>
+      <div class="col-lg-6">
+        <h2>Compressing deep neural networks on FPGAs to binary and ternary precision with \(\texttt{hls4ml}\)</h2>
+        <p>We present the implementation of binary and ternary neural networks in the \(\texttt{hls4ml}\) library,
+          designed to automatically convert deep neural network models to digital circuits with FPGA firmware.
+          We investigate different strategies to reduce networks' resource consumption by reducing the numerical
+          precision of the network parameters to binary or ternary.
+          We discuss the trade-off between model accuracy and resource consumption.
+          In addition, we show how to balance between latency and accuracy by retaining full precision on a selected
+          subset of network components.
+          As examples, we consider two multiclass classification tasks: handwritten digit recognition with the MNIST
+          data set and jet identification with simulated proton-proton collisions at the CERN Large Hadron Collider. The
+          binary and ternary implementation has similar performance to the higher precision implementation while using
+          drastically fewer FPGA resources.
+        </p>
+        <p>Paper: <a href="https://doi.org/10.1088/2632-2153/aba042">Mach. Learn.: Sci. Technol. 2, 015001 (2020)</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="images/bdt_node.png" alt="" width="400">
+      </div>
+      <div class="col-lg-6">
+        <h2>Fast inference of boosted decision trees in FPGAs for particle physics</h2>
+        <p>We describe the implementation of boosted decision trees in the \(\texttt{hls4ml}\) library, which allows the
+          translation of a trained model into FPGA firmware through an automated conversion process.
+          Thanks to its fully on-chip implementation, \(\texttt{hls4ml}\) performs inference of boosted decision tree
+          models with extremely low latency.
+          With a typical latency less than 100 ns, this solution is suitable for FPGA-based real-time processing, such
+          as in the Level-1 trigger system of a collider experiment.
+        </p>
+        <p>Paper: <a href="https://doi.org/10.1088/1748-0221/15/05/p05026">J. Instrum. 15, P05026 (2020)</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-lg-6">
         <img class="img-fluid rounded mb-4" src="images/flow-Hbb.jpg" alt="" width="500">
       </div>
       <div class="col-lg-6">
         <h2>Interaction networks for the identification of boosted \(H\to b\overline{b}\) decays</h2>
         <p>We develop an algorithm based on an
-               interaction network to identify high-momentum
-               Higgs bosons decaying to bottom quark-antiquark pairs and
-               distinguish them from ordinary jets originating from
-               the hadronization of quarks and gluons. Describing the jet shower as a
-               combination of particle-to-particle and
-               particle-to-vertex interactions, the model is trained
-               to learn a jet representation on which the
-               classification problem is optimized. The algorithm is
-               trained on simulated samples of accurate LHC
-               collisions, released by the CMS collaboration on the
-               CERN Open Data Portal. The interaction network achieves
-               a drastic improvement in the identification performance
-	with respect to state-of-the-art algorithms.</p>
-	<p>Paper: <a
-           href="https://doi.org/10.1103/PhysRevD.102.012010">Phys. Rev. D 102, 012010 (2020)</a>
-	<br>Code: <a href="https://github.com/eric-moreno/IN">https://github.com/eric-moreno/IN</a>
+          interaction network to identify high-momentum
+          Higgs bosons decaying to bottom quark-antiquark pairs and
+          distinguish them from ordinary jets originating from
+          the hadronization of quarks and gluons. Describing the jet shower as a
+          combination of particle-to-particle and
+          particle-to-vertex interactions, the model is trained
+          to learn a jet representation on which the
+          classification problem is optimized. The algorithm is
+          trained on simulated samples of accurate LHC
+          collisions, released by the CMS collaboration on the
+          CERN Open Data Portal. The interaction network achieves
+          a drastic improvement in the identification performance
+          with respect to state-of-the-art algorithms.</p>
+        <p>Paper: <a href="https://doi.org/10.1103/PhysRevD.102.012010">Phys. Rev. D 102, 012010 (2020)</a>
+          <br>Code: <a href="https://github.com/eric-moreno/IN">https://github.com/eric-moreno/IN</a>
       </div>
     </div>
-           <div class="row">
+    <div class="row">
       <div class="col-lg-6">
         <img class="img-fluid rounded mb-4" src="images/graph_white.jpg" alt="" width="500">
       </div>
       <div class="col-lg-6">
         <h2>JEDI-net: a jet identification algorithm based on interaction networks</h2>
         <p>We investigate the performance of a jet identification
-           algorithm based on interaction networks (JEDI-net) to
-           identify all-hadronic decays of high-momentum heavy
-           particles produced at the LHC and distinguish them from
-           ordinary jets originating from the hadronization of quarks
-	and gluons. The jet dynamics are described as a set of
-           one-to-one interactions between the jet constituents. Based
-           on a representation learned from these interactions, the
-           jet is associated to one of the considered categories. The
-           presented models give better results with less model
-           parameters than other traditional architectures.</p>
-	<p>Paper: <a
-           href="https://doi.org/10.1140/epjc/s10052-020-7608-4">Eur. Phys. J. C 80, 58 (2020)</a>
-	<br>Code: <a href="https://github.com/jmduarte/JEDInet-code">https://github.com/jmduarte/JEDInet-code</a>
+          algorithm based on interaction networks (JEDI-net) to
+          identify all-hadronic decays of high-momentum heavy
+          particles produced at the LHC and distinguish them from
+          ordinary jets originating from the hadronization of quarks
+          and gluons. The jet dynamics are described as a set of
+          one-to-one interactions between the jet constituents. Based
+          on a representation learned from these interactions, the
+          jet is associated to one of the considered categories. The
+          presented models give better results with less model
+          parameters than other traditional architectures.</p>
+        <p>Paper: <a href="https://doi.org/10.1140/epjc/s10052-020-7608-4">Eur. Phys. J. C 80, 58 (2020)</a>
+          <br>Code: <a href="https://github.com/jmduarte/JEDInet-code">https://github.com/jmduarte/JEDInet-code</a>
       </div>
     </div>
-        <div class="row">
+    <div class="row">
       <div class="col-lg-6">
         <img class="img-fluid rounded mb-4" src="images/sonic.jpg" alt="" width="500">
       </div>
       <div class="col-lg-6">
         <h2>FPGA-accelerated machine learning inference as a service for particle physics computing</h2>
         <p>We demonstrate that the acceleration of machine learning
-        inference as a service represents a nondisruptive, heterogeneous
-        computing solution for particle physics experiments. We retrain the ResNet-50
-        convolutional neural network to achieve state-of-the-art
-        performance for top quark jet tagging at the LHC and apply a
-        ResNet-50 model with transfer learning for neutrino event
-        classification. Using Project Brainwave by Microsoft to
-        accelerate the ResNet-50 image classification model, we
-        achieve average inference times of 60 (10) milliseconds with
-        our experimental physics software framework using Brainwave as
-        a cloud (edge or on-premises) service, and a maximum throughput of 600-700 inferences per second.</p>
-	<p>Paper: <a href="https://doi.org/10.1007/s41781-019-0027-2">Comput. Softw. Big. Sci. 3, 13 (2019)</a>
-	<br>Code: <a href="https://github.com/fastmachinelearning/SonicCMS">https://github.com/fastmachinelearning/SonicCMS</a>
+          inference as a service represents a nondisruptive, heterogeneous
+          computing solution for particle physics experiments. We retrain the ResNet-50
+          convolutional neural network to achieve state-of-the-art
+          performance for top quark jet tagging at the LHC and apply a
+          ResNet-50 model with transfer learning for neutrino event
+          classification. Using Project Brainwave by Microsoft to
+          accelerate the ResNet-50 image classification model, we
+          achieve average inference times of 60 (10) milliseconds with
+          our experimental physics software framework using Brainwave as
+          a cloud (edge or on-premises) service, and a maximum throughput of 600-700 inferences per second.</p>
+        <p>Paper: <a href="https://doi.org/10.1007/s41781-019-0027-2">Comput. Softw. Big. Sci. 3, 13 (2019)</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/SonicCMS">https://github.com/fastmachinelearning/SonicCMS</a>
       </div>
     </div>
     <!-- /.row -->
@@ -520,17 +678,18 @@ href="http://doi.org/10.1007/JHEP12(2020)085">J. High Energy Phys. 12, 085 (2020
       <div class="col-lg-6">
         <h2>Fast inference of deep neural networks in FPGAs for particle physics</h2>
         <p>We develop a package based on high-level Synthesis (HLS) called \(\texttt{hls4ml}\) to build machine
-    learning models in FPGAs for extremely low-latency applications
-    (less than one microsecond). The use of HLS increases accessibility
-    across a broad user community and allows for a drastic decrease in
-    firmware development time. We map out FPGA resource usage and
-    latency versus neural network hyperparameters to identify the
-    problems in particle physics that would benefit from performing
-    neural network inference with FPGAs. For a case study jet
-    substructure model, we fit well within the available resources of
-	modern FPGAs with a latency on the scale of 100 ns.</p>
-	<p>Paper: <a href="https://doi.org/10.1088/1748-0221/13/07/P07027">J. Instrum. 13, P07027 (2018)</a>
-	<br>Code: <a href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
+          learning models in FPGAs for extremely low-latency applications
+          (less than one microsecond). The use of HLS increases accessibility
+          across a broad user community and allows for a drastic decrease in
+          firmware development time. We map out FPGA resource usage and
+          latency versus neural network hyperparameters to identify the
+          problems in particle physics that would benefit from performing
+          neural network inference with FPGAs. For a case study jet
+          substructure model, we fit well within the available resources of
+          modern FPGAs with a latency on the scale of 100 ns.</p>
+        <p>Paper: <a href="https://doi.org/10.1088/1748-0221/13/07/P07027">J. Instrum. 13, P07027 (2018)</a>
+          <br>Code: <a
+            href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
       </div>
     </div>
     <!-- /.row -->
