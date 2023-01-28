@@ -1,6 +1,0 @@
-AuthType Basic  
-AuthGroupFile /dev/null
-Options +Indexes
-AuthName "Secure Document"
-AuthUserFile /var/www/users/jduarte/phys2c/hwsol/.htpasswd
-require user phys2c
