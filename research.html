@@ -101,6 +101,62 @@
 
       <div class="row">
         <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/DPGL1_5.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Anomaly Detection in the CMS Global Trigger Test Crate for Run 3</h2>
+          <p>This DPS note shows the design, implementation, and performance of an ML-based trigger algorithm, AXOL1TL,
+            which selects anomalous events in real-time. The AXOL1TL algorithm was implemented in Level-1 Global Trigger
+            Test Crate for 2023 data taking.</p>
+          <p>CMS Detector Performance Summary: <a
+              href="https://cds.cern.ch/record/2876546">https://cds.cern.ch/record/2876546</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/visual_abstract.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Scalable neural network models and terascale datasets for particle-flow reconstruction</h2>
+          <p>We study scalable machine learning models for full event reconstruction in high-energy electron-positron
+            collisions based on a highly granular detector simulation. Particle-flow (PF) reconstruction can be
+            formulated as a supervised learning task using tracks and calorimeter clusters or hits. We compare a graph
+            neural network and kernel-based transformer and demonstrate that both avoid quadratic memory allocation and
+            computational cost while achieving realistic PF reconstruction. We show that hyperparameter tuning on a
+            supercomputer significantly enhances the physics performance of the models, improving the jet transverse
+            momentum resolution by up to 50% compared to the baseline. The resulting model is highly portable across
+            hardware processors, supporting Nvidia, AMD, and Intel Habana cards. Finally, we demonstrate that the model
+            can be trained on highly granular inputs consisting of tracks and calorimeter hits, resulting in a
+            competitive physics performance with the baseline. Datasets and software to reproduce the studies are
+            published following the findable, accessible, interoperable, and reusable (FAIR) principles.
+          </p>
+          <p>Paper: <a href="https://arxiv.org/abs/2309.06782">arXiv:2309.06782</a>
+            <br>Code: <a href="https://github.com/jpata/particleflow">https://github.com/jpata/particleflow</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/ae_demo.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Differentiable Earth Mover's Distance for Data Compression at the High-Luminosity LHC</h2>
+          <p>The Earth mover's distance (EMD) is a useful metric for image recognition and classification, but its usual
+            implementations are not differentiable or too slow to be used as a loss function for training other
+            algorithms via gradient descent. In this paper, we train a convolutional neural network (CNN) to learn a
+            differentiable, fast approximation of the EMD and demonstrate that it can be used as a substitute for
+            computing-intensive EMD implementations. We apply this differentiable approximation in the training of an
+            autoencoder-inspired neural network (encoder NN) for data compression at the high-luminosity LHC at CERN.
+            The goal of this encoder NN is to compress the data while preserving the information related to the
+            distribution of energy deposits in particle detectors. We demonstrate that the performance of our encoder NN
+            trained using the differentiable EMD CNN surpasses that of training with loss functions based on mean
+            squared error.
+          </p>
+          <p>Paper: <a href="https://arxiv.org/abs/2306.04712">arXiv:2306.04712</a>
+            <br>Code: <a href="https://github.com/rohanshenoy/Ecoder">https://github.com/rohanshenoy/Ecoder</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
           <img class="img-fluid rounded mb-4" src="images/wow.png" alt="" width="500">
         </div>
         <div class="col-lg-6">
