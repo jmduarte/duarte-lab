@@ -1,0 +1,17 @@
+title: Duarte Lab @ UCSD
+description: Particle Physics and Machine Learning
+url: "https://jduarte.physics.ucsd.edu"
+baseurl: ""
+
+markdown: kramdown
+exclude:
+  - README.md
+  - resources_README.md
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - node_modules
+  - vendor/bootstrap/scss
+  - vendor/jquery/src

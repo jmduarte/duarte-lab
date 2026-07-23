@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <h4>Duarte Lab @ UCSD <font color="lightgray"><small>Particle Physics and Machine Learning</small></font>
+      </h4>
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item{% if page.active_nav == 'about' %} active{% endif %}">
+          <a class="nav-link" href="{{ '/' | relative_url }}">About</a>
+        </li>
+        <li class="nav-item{% if page.active_nav == 'research' %} active{% endif %}">
+          <a class="nav-link" href="{{ '/research.html' | relative_url }}">Research</a>
+        </li>
+        <li class="nav-item{% if page.active_nav == 'people' %} active{% endif %}">
+          <a class="nav-link" href="{{ '/people.html' | relative_url }}">People</a>
+        </li>
+        <li class="nav-item{% if page.active_nav == 'teaching' %} active{% endif %}">
+          <a class="nav-link" href="{{ '/teaching.html' | relative_url }}">Teaching</a>
+        </li>
+        <li class="nav-item{% if page.active_nav == 'resources' %} active{% endif %}">
+          <a class="nav-link" href="{{ '/resources.html' | relative_url }}">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
