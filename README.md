@@ -1,6 +1,6 @@
 # Duarte Lab @ UCSD
 
-Source for the [Duarte Lab](https://jmduarte.github.io/duarte-lab/) website, built with [Jekyll](https://jekyllrb.com/) and served via GitHub Pages from the `gh-pages` branch.
+Source for the [Duarte Lab](https://jduarte.physics.ucsd.edu/) website, built with [Jekyll](https://jekyllrb.com/) and served via GitHub Pages from the `gh-pages` branch.
 
 ## Structure
 
