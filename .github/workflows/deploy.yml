@@ -1,0 +1,46 @@
+name: Deploy to jduarte.physics.ucsd.edu
+
+on:
+  push:
+    branches: [gh-pages]
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Install SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H users.physics.ucsd.edu >> ~/.ssh/known_hosts
+
+      # No --delete: this target directory also holds course pages and other
+      # content unrelated to this repo, so we only ever add/update files here,
+      # never remove anything. Stale files (e.g. a removed old image) will
+      # need to be cleaned up on the server by hand from time to time.
+      - name: Deploy via rsync
+        run: |
+          rsync -avz --exclude '.git' \
+            _site/ \
+            jduarte@users.physics.ucsd.edu:/home/jduarte/web/jduarte.physics.ucsd.edu/
