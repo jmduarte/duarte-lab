@@ -8,3 +8,17 @@
 <!-- Bootstrap core JavaScript -->
 <script src="{{ '/vendor/jquery/jquery.min.js' | relative_url }}"></script>
 <script src="{{ '/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+
+<!-- Toggle labels for any "Show older ..." collapse sections on the page -->
+<script>
+  $('[data-collapse-toggle-label]').each(function () {
+    var $toggle = $(this);
+    var $target = $($toggle.data('collapse-toggle-label'));
+    if (!$target.length) return;
+    $target.on('show.bs.collapse', function () {
+      $toggle.text($toggle.data('expanded-label'));
+    }).on('hide.bs.collapse', function () {
+      $toggle.text($toggle.data('collapsed-label'));
+    });
+  });
+</script>
