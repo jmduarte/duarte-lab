@@ -12,6 +12,30 @@
 #
 # Order matters: entries render newest-first, and everything after the
 # first `collapse_after` (see research.html) is hidden behind the toggle.
+- arxiv: '2607.05145'
+  title: Search for nonresonant triple Higgs boson production in the final state with six bottom quarks
+    in proton-proton collisions at \(\sqrt{s}\) = 13 TeV
+  image: CMS-HIG-24-012_Figure_002-b.png
+  image_width: 500
+  abstract: >-
+    A search for nonresonant triple Higgs boson (HHH) production in the final state with six bottom quarks
+    is performed using proton-proton collisions at \(\sqrt{s}\) = 13 TeV corresponding to an integrated
+    luminosity of 138 fb\(^{-1}\) recorded by the CMS experiment. No significant excess of events over
+    the background prediction is seen. Observed (expected) 95% confidence level upper limits on the signal
+    cross section are set at 44 (43) fb, corresponding to 588 (572) times the standard model expectation.
+    The observed (expected) constraint on the trilinear coupling modifier \(\kappa_3\) is \(-\)7.4 \(\lt\)
+    \(\kappa_3\) \(\lt\) 12.4 (\(-\)6.4 \(\lt\) \(\kappa_3\) \(\lt\) 11.2), assuming the quartic coupling
+    modifier \(\kappa_4\) = 1. The corresponding constraint on \(\kappa_4\) is \(-\)177 \(\lt\) \(\kappa_4\)
+    \(\lt\) 185 (\(-\)180 \(\lt\) \(\kappa_4\) \(\lt\) 190), assuming \(\kappa_3\) = 1. This analysis
+    provides the most stringent constraint to date on nonresonant HHH production and excludes, for the
+    first time, part of the \((\kappa_3,\kappa_4)\) space allowed by the perturbative unitarity bound.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2607.05145
+    text: arXiv:2607.05145
+  - label: Figures
+    url: https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-012/
+    text: https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-012
 - arxiv: '2607.19750'
   title: Machine Can Automatically Discover Parametric Functions to Model HEP Data
   image: symbolfit_spectrum_cms.png
