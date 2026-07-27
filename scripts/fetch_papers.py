@@ -199,7 +199,8 @@ def main() -> int:
         if not e.get('title'):
             t = pick_title(meta)
             if t:
-                e['title'] = t
+                # titles carry math too, e.g. "... at $\sqrt{s}$ = 13 TeV"
+                e['title'] = tex_to_mathjax(t)
         if not e.get('abstract'):
             a = pick_abstract(meta)
             if a:
