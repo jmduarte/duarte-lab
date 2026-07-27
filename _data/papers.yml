@@ -12,6 +12,27 @@
 #
 # Order matters: entries render newest-first, and everything after the
 # first `collapse_after` (see research.html) is hidden behind the toggle.
+- arxiv: '2607.19750'
+  title: Machine Can Automatically Discover Parametric Functions to Model HEP Data
+  image: symbolfit_spectrum_cms.png
+  image_width: 500
+  abstract: >-
+    In HEP data analyses, finding an adequate function to model binned data has largely relied on a manual
+    process: guess a functional form by intuition, fit, examine, then repeat until successful. We show
+    that this iterative process can be automated by a machine using symbolic regression, which performs
+    a data-driven search over function space without requiring prior knowledge of what an adequate function
+    should look like. We present the SymbolFit package, which pairs symbolic regression with uncertainty
+    modeling to target HEP analysis use cases, and demonstrate it on the CMS and ATLAS Run 2 dijet spectra:
+    560 independent seeded runs across seven simple fit configurations generated over 1000 functions fitting
+    the spectra with \(χ^2/\text{NDF}\approx 1\), and 111 of the runs rediscovered the very dijet and
+    UA2 functions used in published dijet searches.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2607.19750
+    text: arXiv:2607.19750
+  - label: Code
+    url: https://github.com/hftsoi/symbolfit
+    text: https://github.com/hftsoi/symbolfit
 - arxiv: '2606.20437'
   title: 'HEPTv2: End-to-End Efficient Point Transformer for Charged Particle Reconstruction'
   image: heptv2.png
