@@ -261,6 +261,18 @@
                             I: <a href="https://indico.ihep.ac.cn/event/24761/">Large Jet Models Workshop</a> at Peking
                             University,
                             Beijing, China<br>
+                        </p>
+
+                        <div class="text-center">
+                            <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse"
+                                data-target="#olderNews" aria-expanded="false" aria-controls="olderNews"
+                                id="olderNewsToggle">
+                                Show older news
+                            </button>
+                        </div>
+
+                        <div class="collapse" id="olderNews">
+                        <p style="font-size:15px">
                             <br>
                             <b>December 15, 2024</b>: Subash presents "Learning Symmetry-Independent Jet Representations
                             via
@@ -668,6 +680,8 @@
                                 href="http://ml4physicalsciences.github.io/2019/">2nd Machine Learning and the Physical
                                 Sciences
                                 Workshop</a> at NeurIPS 2019.
+                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -691,6 +705,13 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script>
+        $('#olderNews').on('show.bs.collapse', function () {
+            $('#olderNewsToggle').text('Show fewer news items');
+        }).on('hide.bs.collapse', function () {
+            $('#olderNewsToggle').text('Show older news');
+        });
+    </script>
 
 </body>
 

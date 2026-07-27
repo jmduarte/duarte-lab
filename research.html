@@ -370,6 +370,15 @@
           <br>Code: <a href="https://github.com/JavierZhao/JetCLR">https://github.com/JavierZhao/JetCLR</a>
       </div>
     </div>
+
+    <div class="text-center my-4">
+      <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#olderResearch"
+        aria-expanded="false" aria-controls="olderResearch" id="olderResearchToggle">
+        Show older research
+      </button>
+    </div>
+
+    <div class="collapse" id="olderResearch">
     <div class="row">
       <div class="col-lg-6">
         <img class="img-fluid rounded mb-4" src="images/HIG-23-012_1.png" alt="" width="500">
@@ -1264,6 +1273,7 @@
             href="https://github.com/fastmachinelearning/hls4ml">https://github.com/fastmachinelearning/hls4ml</a>
       </div>
     </div>
+    </div>
     <!-- /.row -->
 
   </div>
@@ -1280,6 +1290,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $('#olderResearch').on('show.bs.collapse', function () {
+      $('#olderResearchToggle').text('Show fewer research items');
+    }).on('hide.bs.collapse', function () {
+      $('#olderResearchToggle').text('Show older research');
+    });
+  </script>
 
 </body>
 
