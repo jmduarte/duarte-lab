@@ -33,6 +33,12 @@ API = 'https://inspirehep.net/api'
 UA = 'duarte-lab-site/1.0 (https://github.com/jmduarte/duarte-lab)'
 FIELDS = 'titles,abstracts,arxiv_eprints,dois'
 
+# The order keys appear in for each entry in _data/papers.yml: identifiers,
+# then what's shown, then the links. Anything not listed here is kept and
+# appended after these.
+KEY_ORDER = ('arxiv', 'doi', 'title', 'image', 'image_width', 'embed',
+             'abstract', 'links')
+
 
 class Folded(str):
     """A string emitted as a folded YAML block scalar.
@@ -106,11 +112,30 @@ def load():
     return ''.join(header), yaml.safe_load(''.join(body)) or []
 
 
+def canonical(entry: dict) -> dict:
+    """Rebuild an entry with its keys in the order papers.yml uses.
+
+    Without this, keys filled in by this script land wherever dict insertion
+    put them -- a hand-written entry listing `links:` before the script adds
+    `title:`/`abstract:` ends up with those two dangling at the end, which
+    reads nothing like the entries around it.
+
+    Keys not in KEY_ORDER are kept (appended) rather than dropped, so adding
+    a new field to papers.yml doesn't silently lose it on the next run.
+    """
+    out = {k: entry[k] for k in KEY_ORDER if k in entry}
+    out.update({k: v for k, v in entry.items() if k not in KEY_ORDER})
+    return out
+
+
 def dump(header: str, entries: list) -> None:
+    out = []
     for e in entries:
+        e = canonical(e)
         if isinstance(e.get('abstract'), str):
             e['abstract'] = Folded(e['abstract'])
-    body = yaml.dump(entries, sort_keys=False, allow_unicode=True,
+        out.append(e)
+    body = yaml.dump(out, sort_keys=False, allow_unicode=True,
                      width=100, default_flow_style=False)
     PAPERS.write_text(header + body)
 
