@@ -1,0 +1,28 @@
+name: Test Jekyll build
+
+on:
+  pull_request:
+    branches: [gh-pages]
+
+concurrency:
+  group: test-build-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
