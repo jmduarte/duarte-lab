@@ -16,6 +16,10 @@ However, if you’re not familiar with any of these next terms, google what they
 - Cloning a repository from Github
 
 
+## CERN and Fermilab access for CMS projects
+
+If your project requires CMS computing access, start with Anish Bhat's [CERN and Fermilab computing onboarding guide](https://github.com/abhat-phys/onboarding_offline_software_for_comp). It covers account setup, security training, grid certificates, and SSH access to the Fermilab LPC. Confirm current requirements and institute contacts with your mentor and follow the official instructions linked in the guide.
+
 ## Setting-up your computing environment
 Unfortunately, for every project/tutorial you work through, you first have to setup a computing environment. As you might suspect, each project requires specific packages (ex: numpy, pandas, .. ) and even specific versions of these packages. This imposes an obstacle when you want to experiment with different tutorials.
 
