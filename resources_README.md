@@ -16,6 +16,10 @@ However, if you’re not familiar with any of these next terms, google what they
 - Cloning a repository from Github
 
 
+## CERN and Fermilab access for CMS projects
+
+For CMS projects, follow the [account checklist on our Resources page](https://jduarte.physics.ucsd.edu/resources.html#cms-computing-onboarding), based on the [official CMS WorkBook](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookGetAccount). Start CERN preregistration with your institute's team leader. Anish Bhat's [onboarding walkthrough](https://github.com/abhat-phys/onboarding_offline_software_for_comp) supplements the official instructions with Fermilab/LPC setup; confirm project requirements with your mentor.
+
 ## Setting-up your computing environment
 Unfortunately, for every project/tutorial you work through, you first have to setup a computing environment. As you might suspect, each project requires specific packages (ex: numpy, pandas, .. ) and even specific versions of these packages. This imposes an obstacle when you want to experiment with different tutorials.
 
