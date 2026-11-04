@@ -12,6 +12,62 @@
 #
 # Order matters: entries render newest-first, and everything after the
 # first `collapse_after` (see research.html) is hidden behind the toggle.
+- arxiv: '2611.00234'
+  title: Localized anomaly detection with a calorimeter normalizing flow
+  image: calo_flow_anomaly_map.png
+  image_width: 500
+  abstract: >-
+    Normalizing flows trained as fast calorimeter simulators also give the likelihood of each shower,
+    which can serve as an anomaly score. Because this likelihood sums over every voxel, a signal confined
+    to a few voxels can be lost in the fluctuations of the rest of the shower. For example, in a public
+    benchmark dataset in which a long-lived neutral particle decays to two photons, the CaloFlow likelihood
+    used in previous work selects less than 5% of the signal at a background efficiency of \(10^{-3}\)
+    when the particle has the largest simulated mass and decays at or just behind the front face of the
+    calorimeter. In this work, we define a regional anomaly score by summing the squared latent coordinates
+    of the same flow within small detector regions around the point where the particle enters the calorimeter,
+    with the threshold set using background showers alone. At the same background efficiency, this regional
+    anomaly score selects more than 95% of the signal. The per-coordinate likelihood terms, summed over
+    the same regions, perform equally well, but the squared latent coordinates have a known distribution
+    for background showers and clearly illustrate when a shower departs from it. Therefore, normalizing
+    flows may be sensitive to new physics, even if the global likelihood is not.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2611.00234
+    text: arXiv:2611.00234
+- arxiv: '2610.15919'
+  title: 'RINO: Renormalization Group Distillation with No Labels'
+  image: rino_diagram.png
+  image_width: 500
+  abstract: >-
+    Supervised machine learning in high-energy physics (HEP) requires training on labeled simulations
+    of particle collisions, which are known to be unfaithful to the underlying physics. This leads to
+    significant inaccuracies and biases in the transfer of trained models to real data, limiting the power
+    of deep learning methods. Self-supervised learning (SSL) is a promising alternative for pretraining
+    directly on real, unlabeled data. However, existing techniques largely operate with inductive biases
+    inspired by domains such as images and natural language. We propose RINO (Renormalization Group DIstillation
+    with NO Labels), which, for the first time, exploits the fundamentally multi-scale renormalization
+    group structure of high-energy jet formation as a physically grounded source of SSL views. We define
+    teacher-student representations across energy scales using different levels of hierarchical clustering,
+    aligned via DINO-style self-distillation. To mirror the background-dominated nature of real collider
+    data, RINO pretrains exclusively on jets from quantum chromodynamics (QCD) processes and is evaluated
+    on out-of-distribution (OOD) transfer to rare signal classes. In our controlled data-efficiency study,
+    RINO matches fully supervised training on JetNet after finetuning on only 1% of the labeled data.
+    With the full labeled dataset, RINO improves OOD classification accuracy on top-quark jets by 5.9%
+    and, without retraining, improves AUC on the unseen Higgs boson decay channel \(H \to 4q\) by 4.1%
+    over the strongest SSL baseline. Scale-structure diagnostics reveal that DINO-style self-distillation
+    permits our backbone to retain scale-dependent structure. Ablation studies show that this accounts
+    for an 8.6% OOD accuracy gap with respect to alternative SSL paradigms such as SimCLR. Code is available
+    at https://github.com/zichunhao/RINO.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2610.15919
+    text: arXiv:2610.15919
+  - label: Preliminary version
+    url: https://arxiv.org/abs/2509.07486
+    text: arXiv:2509.07486 (ML4PS Workshop at NeurIPS 2025)
+  - label: Code
+    url: https://github.com/zichunhao/RINO
+    text: https://github.com/zichunhao/RINO
 - arxiv: '2607.05145'
   title: Search for nonresonant triple Higgs boson production in the final state with six bottom quarks
     in proton-proton collisions at \(\sqrt{s}\) = 13 TeV
@@ -114,6 +170,31 @@
   - label: Code
     url: https://github.com/jpata/particleflow
     text: https://github.com/jpata/particleflow
+- arxiv: '2605.21789'
+  title: Patch Hierarchical Attention Transformer for Efficient Particle Jet Tagging
+  image: phatjet_patch_size_trend.png
+  image_width: 500
+  abstract: >-
+    Real-time jet tagging is critical for identifying short-lived particle decays in the high-throughput
+    detectors of the Large Hadron Collider, where real-time trigger systems responsible for deciding which
+    collision events to store impose strict latency and accuracy constraints. While transformer architectures
+    achieve the highest jet tagging accuracy when compute is unconstrained, their quadratic self-attention
+    cost makes inference restrictive on trigger budget. Existing efficient variants reduce the computational
+    cost, but hinder the classification performance. To address this limitation, we introduce the Patch
+    Hierarchical Attention Transformer (PHAT-JeT), which combines two mechanisms: a physics-inspired geometric
+    message-passing module that encodes local detector-plane structure, and a hierarchical patch-based
+    attention scheme that computes exact attention within small particle groups while preserving global
+    context through lightweight patch-token communication. Within a restricted budget, PHAT-JeT achieves
+    state-of-the-art accuracy and background rejection among all resource-constrained jet tagging models
+    on four benchmarks (\(\texttt{hls4ml}\), JetClass, Top Tagging, and Quark--Gluon). Our code is available
+    at https://github.com/aaronw5/PHAT-JeT.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2605.21789
+    text: arXiv:2605.21789 (accepted to NeurIPS 2026)
+  - label: Code
+    url: https://github.com/aaronw5/PHAT-JeT
+    text: https://github.com/aaronw5/PHAT-JeT
 - arxiv: '2605.16138'
   title: Surrogate Neural Architecture Codesign Package (SNAC-Pack)
   image: snac_figure_try5.png
