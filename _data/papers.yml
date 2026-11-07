@@ -141,10 +141,14 @@
   - label: Paper
     url: https://arxiv.org/abs/2606.20437
     text: arXiv:2606.20437
+  - label: Preliminary version
+    url: https://arxiv.org/abs/2510.07594
+    text: arXiv:2510.07594 (ML4PS Workshop at NeurIPS 2025)
   - label: Code
     url: https://github.com/Graph-COM/HEPTv2
     text: https://github.com/Graph-COM/HEPTv2
 - arxiv: '2606.14373'
+  doi: 10.1103/v5n3-d3tn
   title: Machine-learned particle flow as a foundation model for collider physics
   image: MLPF_FM_paper_illustration.png
   image_width: 500
@@ -165,8 +169,8 @@
     to physics analysis.
   links:
   - label: Paper
-    url: https://arxiv.org/abs/2606.14373
-    text: arXiv:2606.14373
+    url: https://doi.org/10.1103/v5n3-d3tn
+    text: PRX Intelligence 1, 023012 (2026)
   - label: Code
     url: https://github.com/jpata/particleflow
     text: https://github.com/jpata/particleflow
@@ -196,7 +200,7 @@
     url: https://github.com/aaronw5/PHAT-JeT
     text: https://github.com/aaronw5/PHAT-JeT
 - arxiv: '2605.16138'
-  title: Surrogate Neural Architecture Codesign Package (SNAC-Pack)
+  title: 'SNAC-Pack 2.0: Scaled-Out Surrogate Neural Architecture Codesign'
   image: snac_figure_try5.png
   image_width: 500
   abstract: >-
@@ -221,6 +225,9 @@
   - label: Paper
     url: https://arxiv.org/abs/2605.16138
     text: arXiv:2605.16138
+  - label: Preliminary version
+    url: https://arxiv.org/abs/2512.15998
+    text: arXiv:2512.15998 (ML4PS Workshop at NeurIPS 2025)
   - label: Code
     url: https://github.com/fastmachinelearning/nac-opt
     text: https://github.com/fastmachinelearning/nac-opt
@@ -302,6 +309,197 @@
   - label: Figures
     url: https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-008
     text: https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-008
+- arxiv: '2512.01463'
+  title: 'hls4ml: A Flexible, Open-Source Platform for Deep Learning Acceleration on Reconfigurable Hardware'
+  image: hls4ml_platform_internal_structure.png
+  image_width: 500
+  abstract: >-
+    We present hls4ml, a free and open-source platform that translates machine learning (ML) models from
+    modern deep learning frameworks into high-level synthesis (HLS) code that can be integrated into full
+    designs for field-programmable gate arrays (FPGAs) or application-specific integrated circuits (ASICs).
+    With its flexible and modular design, hls4ml supports a large number of deep learning frameworks and
+    can target HLS compilers from several vendors, including Vitis HLS, Intel oneAPI and Catapult HLS.
+    Together with a wider eco-system for software-hardware co-design, hls4ml has enabled the acceleration
+    of ML inference in a wide range of commercial and scientific applications where low latency, resource
+    usage, and power consumption are critical. In this paper, we describe the structure and functionality
+    of the hls4ml platform. The overarching design considerations for the generated HLS code are discussed,
+    together with selected performance results.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2512.01463
+    text: arXiv:2512.01463
+  - label: Code
+    url: https://github.com/fastmachinelearning/hls4ml
+    text: https://github.com/fastmachinelearning/hls4ml
+- arxiv: '2512.00210'
+  title: Why Is Attention Sparse In Particle Transformer?
+  image: attention_sparsity_score_dist.png
+  image_width: 500
+  abstract: >-
+    Transformer-based models have achieved state-of-the-art performance in jet tagging at the CERN Large
+    Hadron Collider (LHC), with the Particle Transformer (ParT) representing a leading example of such
+    models. A striking feature of ParT is its sparse, nearly binary, attention structure, raising questions
+    about the origin of this behavior and whether it encodes physically meaningful correlations. In this
+    work, we investigate the source of ParT's sparse attention by comparing models trained on multiple
+    benchmark datasets and examine the relative contributions of the attention term and the physics-inspired
+    interaction matrix before softmax. We find that binary sparsity arises primarily from the attention
+    mechanism itself, with the interaction matrix playing a secondary role. Moreove, we show that ParT
+    is able to identify key jet substructure elements, such as leptons in semileptonic top decays, even
+    without explicit particle identification inputs. These results provide new insight into the interpretability
+    of transformer-based jet taggers and clarify the conditions under which sparse attention patterns
+    emerge in ParT.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2512.00210
+    text: arXiv:2512.00210 (ML4PS Workshop at NeurIPS 2025)
+- arxiv: '2511.05615'
+  doi: 10.1145/3787490
+  title: 'wa-hls4ml: A Benchmark and Surrogate Models for hls4ml Resource and Latency Estimation'
+  image: wa_hls4ml_codesign_workflow.png
+  image_width: 500
+  abstract: >-
+    As machine learning (ML) is increasingly implemented in hardware to address real-time challenges in
+    scientific applications, the development of advanced toolchains has significantly reduced the time
+    required to iterate on various designs. These advancements have solved major obstacles, but also exposed
+    new challenges. For example, processes that were not previously considered bottlenecks, such as hardware
+    synthesis, are becoming limiting factors in the rapid iteration of designs. To mitigate these emerging
+    constraints, multiple efforts have been undertaken to develop an ML-based surrogate model that estimates
+    resource usage of ML accelerator architectures. We introduce wa-hls4ml, a benchmark for ML accelerator
+    resource and latency estimation, and its corresponding initial dataset of over 680,000 fully connected
+    and convolutional neural networks, all synthesized using hls4ml and targeting Xilinx FPGAs. The benchmark
+    evaluates the performance of resource and latency predictors against several common ML model architectures,
+    primarily originating from scientific domains, as exemplar models, and the average performance across
+    a subset of the dataset. Additionally, we introduce GNN- and transformer-based surrogate models that
+    predict latency and resources for ML accelerators. We present the architecture and performance of
+    the models and find that the models generally predict latency and resources for the 75% percentile
+    within several percent of the synthesized resources on the synthetic test dataset.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1145/3787490
+    text: ACM Trans. Reconfigurable Technol. Syst. 19, 20 (2026)
+- arxiv: '2510.23641'
+  title: Spatially Aware Linear Transformer (SAL-T) for Particle Jet Tagging
+  image: salt_lpp_mha.png
+  image_width: 500
+  abstract: >-
+    Transformers are very effective in capturing both global and local correlations within high-energy
+    particle collisions, but they present deployment challenges in high-data-throughput environments,
+    such as the CERN LHC. The quadratic complexity of transformer models demands substantial resources
+    and increases latency during inference. In order to address these issues, we introduce the Spatially
+    Aware Linear Transformer (SAL-T), a physics-inspired enhancement of the linformer architecture that
+    maintains linear attention. Our method incorporates spatially aware partitioning of particles based
+    on kinematic features, thereby computing attention between regions of physical significance. Additionally,
+    we employ convolutional layers to capture local correlations, informed by insights from jet physics.
+    In addition to outperforming the standard linformer in jet classification tasks, SAL-T also achieves
+    classification results comparable to full-attention transformers, while using considerably fewer resources
+    with lower latency during inference. Experiments on a generic point cloud classification dataset (ModelNet10)
+    further confirm this trend. Our code is available at https://github.com/aaronw5/SAL-T4HEP.
+  links:
+  - label: Paper
+    url: https://arxiv.org/abs/2510.23641
+    text: arXiv:2510.23641
+  - label: Code
+    url: https://github.com/aaronw5/SAL-T4HEP
+    text: https://github.com/aaronw5/SAL-T4HEP
+- arxiv: '2506.20657'
+  doi: 10.1145/3708035.3736049
+  title: 'SuperSONIC: Cloud-Native Infrastructure for ML Inferencing'
+  image: supersonic_architecture.png
+  image_width: 500
+  abstract: >-
+    The increasing computational demand from growing data rates and complex machine learning (ML) algorithms
+    in large-scale scientific experiments has driven the adoption of the Services for Optimized Network
+    Inference on Coprocessors (SONIC) approach. SONIC accelerates ML inference by offloading it to local
+    or remote coprocessors to optimize resource utilization. Leveraging its portability to different types
+    of coprocessors, SONIC enhances data processing and model deployment efficiency for cutting-edge research
+    in high energy physics (HEP) and multi-messenger astrophysics (MMA). We developed the SuperSONIC project,
+    a scalable server infrastructure for SONIC, enabling the deployment of computationally intensive tasks
+    to Kubernetes clusters equipped with graphics processing units (GPUs). Using NVIDIA Triton Inference
+    Server, SuperSONIC decouples client workflows from server infrastructure, standardizing communication,
+    optimizing throughput, load balancing, and monitoring. SuperSONIC has been successfully deployed for
+    the CMS and ATLAS experiments at the CERN Large Hadron Collider (LHC), the IceCube Neutrino Observatory
+    (IceCube), and the Laser Interferometer Gravitational-Wave Observatory (LIGO) and tested on Kubernetes
+    clusters at Purdue University, the National Research Platform (NRP), and the University of Chicago.
+    SuperSONIC addresses the challenges of the Cloud-native era by providing a reusable, configurable
+    framework that enhances the efficiency of accelerator-based inference deployment across diverse scientific
+    domains and industries.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1145/3708035.3736049
+    text: PEARC '25 (2025)
+- arxiv: '2503.00131'
+  doi: 10.1103/PhysRevD.111.092015
+  title: Fine-tuning machine-learned particle-flow reconstruction for new detector geometries in future
+    colliders
+  image: mlpf_finetuning_approach.png
+  image_width: 500
+  abstract: >-
+    We demonstrate transfer learning capabilities in a machine-learned algorithm trained for particle-flow
+    reconstruction in high energy particle colliders. This paper presents a cross-detector fine-tuning
+    study, where we initially pretrain the model on a large full simulation dataset from one detector
+    design, and subsequently fine-tune the model on a sample with a different collider and detector design.
+    Specifically, we use the Compact Linear Collider detector (CLICdet) model for the initial training
+    set and demonstrate successful knowledge transfer to the CLIC-like detector (CLD) proposed for the
+    Future Circular Collider in electron-positron mode. We show that with an order of magnitude less samples
+    from the second dataset, we can achieve the same performance as a costly training from scratch, across
+    particle-level and event-level performance metrics, including jet and missing transverse momentum
+    resolution. Furthermore, we find that the fine-tuned model achieves comparable performance to the
+    traditional rule-based particle-flow approach on event-level metrics after training on 100,000 CLD
+    events, whereas a model trained from scratch requires at least 1 million CLD events to achieve similar
+    reconstruction performance. To our knowledge, this represents the first full-simulation cross-detector
+    transfer learning study for particle-flow reconstruction. These findings offer valuable insights towards
+    building large foundation models that can be fine-tuned across different detector designs and geometries,
+    helping to accelerate the development cycle for new detectors and opening the door to rapid detector
+    design and optimization using machine learning.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1103/PhysRevD.111.092015
+    text: Phys. Rev. D 111, 092015 (2025)
+- arxiv: '2501.05520'
+  doi: 10.1088/1748-0221/20/06/P06002
+  title: Track reconstruction as a service for collider physics
+  image: track_aas_illustration.png
+  image_width: 500
+  abstract: >-
+    Optimizing charged-particle track reconstruction algorithms is crucial for efficient event reconstruction
+    in Large Hadron Collider (LHC) experiments due to their significant computational demands. Existing
+    track reconstruction algorithms have been adapted to run on massively parallel coprocessors, such
+    as graphics processing units (GPUs), to reduce processing time. Nevertheless, challenges remain in
+    fully harnessing the computational capacity of coprocessors in a scalable and non-disruptive manner.
+    This paper proposes an inference-as-a-service approach for particle tracking in high energy physics
+    experiments. To evaluate the efficacy of this approach, two distinct tracking algorithms are tested:
+    Patatrack, a rule-based algorithm, and Exa\(.\)TrkX, a machine learning-based algorithm. The as-a-service
+    implementations show enhanced GPU utilization and can process requests from multiple CPU cores concurrently
+    without increasing per-request latency. The impact of data transfer is minimal and insignificant compared
+    to running on local coprocessors. This approach greatly improves the computational efficiency of charged
+    particle tracking, providing a solution to the computing challenges anticipated in the High-Luminosity
+    LHC era.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1088/1748-0221/20/06/P06002
+    text: J. Instrum. 20, P06002 (2025)
+- arxiv: '2501.05515'
+  doi: 10.1088/2632-2153/adede1
+  title: Neural architecture codesign for fast physics applications
+  image: nac_jet_pareto_front.png
+  image_width: 500
+  abstract: >-
+    We develop a pipeline to streamline neural architecture codesign for physics applications to reduce
+    the need for ML expertise when designing models for novel tasks. Our method employs neural architecture
+    search and network compression in a two-stage approach to discover hardware efficient models. This
+    approach consists of a global search stage that explores a wide range of architectures while considering
+    hardware constraints, followed by a local search stage that fine-tunes and compresses the most promising
+    candidates. We exceed performance on various tasks and show further speedup through model compression
+    techniques such as quantization-aware-training and neural network pruning. We synthesize the optimal
+    models to high level synthesis code for FPGA deployment with the hls4ml library. Additionally, our
+    hierarchical search space provides greater flexibility in optimization, which can easily extend to
+    other tasks and domains. We demonstrate this with two case studies: Bragg peak finding in materials
+    science and jet classification in high energy physics, achieving models with improved accuracy, smaller
+    latencies, or reduced resource utilization relative to the baseline models.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1088/2632-2153/adede1
+    text: 'Mach. Learn.: Sci. Technol. 6, 035009 (2025)'
 - arxiv: '2412.03819'
   title: Reconstruction of boosted and resolved multi-Higgs-boson events with symmetry-preserving attention
     networks
