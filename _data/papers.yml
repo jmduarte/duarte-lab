@@ -261,6 +261,7 @@
     url: http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-010
     text: http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-010
 - arxiv: '2604.09809'
+  doi: 10.1007/JHEP10(2026)167
   title: Particle transformers for identifying Lorentz-boosted Higgs bosons decaying to a pair of W bosons
   image: CMS-JME-25-001_Figure_001.png
   image_width: 500
@@ -279,13 +280,15 @@
     and searches for beyond-the-standard-model resonances decaying to hadronic diboson systems.
   links:
   - label: Paper
-    url: https://arxiv.org/abs/2604.09809
-    text: arXiv:2604.09809
+    url: https://doi.org/10.1007/JHEP10(2026)167
+    text: J. High Energy Phys. 10, 167 (2026)
   - label: Figures
     url: http://cms-results.web.cern.ch/cms-results/public-results/publications/JME-25-001
     text: http://cms-results.web.cern.ch/cms-results/public-results/publications/JME-25-001
 - arxiv: '2603.22233'
-  title: Particle transformers for identifying Lorentz-boosted Higgs bosons decaying to a pair of W bosons
+  doi: 10.1007/JHEP07(2026)248
+  title: Search for Higgs boson production at high transverse momentum in the WW decay channel in proton-proton
+    collisions at \(\sqrt{s}\) = 13 TeV
   image: CMS-HIG-24-008_Figure_001.png
   image_width: 500
   abstract: >-
@@ -304,8 +307,8 @@
     Higgs boson in other decay channels.
   links:
   - label: Paper
-    url: https://arxiv.org/abs/2603.22233
-    text: arXiv:2603.22233
+    url: https://doi.org/10.1007/JHEP07(2026)248
+    text: J. High Energy Phys. 07, 248 (2026)
   - label: Figures
     url: https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-008
     text: https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-24-008
@@ -501,6 +504,7 @@
     url: https://doi.org/10.1088/2632-2153/adede1
     text: 'Mach. Learn.: Sci. Technol. 6, 035009 (2025)'
 - arxiv: '2412.03819'
+  doi: 10.1007/JHEP11(2025)119
   title: Reconstruction of boosted and resolved multi-Higgs-boson events with symmetry-preserving attention
     networks
   image: Di-Higgs.png
@@ -523,8 +527,8 @@
     generalized version on nonresonant \(HH\) and \(HHH\) production at the LHC.
   links:
   - label: Paper
-    url: https://arxiv.org/abs/2412.03819
-    text: arXiv:2412.03819
+    url: https://doi.org/10.1007/JHEP11(2025)119
+    text: J. High Energy Phys. 11, 119 (2025)
   - label: Code
     url: https://github.com/ucsd-hep-ex/hhh
     text: https://github.com/ucsd-hep-ex/hhh
